@@ -18,16 +18,21 @@
 ///   margin-left: spacing(large);
 /// @param {string} $key - Nombre del espaciado deseado
 @function spacing($key) {
- @if map-has-key($spacing, $key) {
-   @return map-get($spacing, $key);
- }
+    @if map-has-key($spacing, $key) {
+        @return map-get($spacing, $key);
+    }
 
- @error 'Unknown spacing "#{$key}"';
- @return null;
+    @error 'Unknown spacing "#{$key}"';
+
+    @return null;
 }
 
 /// Obtiene el valor en *negativo* del espaciado según su nombre.
 /// @param {string} $key - Nombre del espaciado deseado
 @function -spacing($key) {
-@return - spacing($key);
+    @return -(spacing($key));
+}
+
+.aaa {
+    background-color: red;
 }
