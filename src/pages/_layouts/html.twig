@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,21 +30,22 @@
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <style>
-        /* inject:styles-critical:css *//* endinject */
-
+        /* inject:styles-critical:css */
+        /* endinject */
     </style>
 
     <!-- inject:css -->
     <!-- endinject -->
 
-    </head>
-    <body class="page-{{currentMenu}}">
-        {% block body %}
-        {% endblock %}
-        <!-- inject:vendors:js -->
-        <!-- endinject -->
-        <!-- inject:js -->
-        <!-- endinject -->
-        {% include 'includes::/grpd.twig' %}
-    </body>
+</head>
+
+<body class="page-{{currentMenu}}">
+    {% block body %}
+    {% endblock %}
+    <!-- inject:vendors:js -->
+    <!-- endinject -->
+    <!-- inject:js -->
+    <!-- endinject -->
+</body>
+
 </html>
