@@ -1,0 +1,140 @@
+// COLORS
+
+$red: #E73F39;
+$redstrong: #AD2F2B;
+$red-light: #fad9d7;
+$red-extralight: rgba(231, 63, 57, 0.05);
+$black: #000;
+$black-soft: #111;
+$gray-extradark: #4E5C65;
+$gray: #999;
+$gray-dark: #666;
+$gray-light: #DDE4E9;
+$white: #ffffff;
+$blue: #132631;
+$blue-ligth: rgba(19, 38, 49, 0.1);
+$blue-soft: #899398;
+
+// END COLORS
+
+/*
+===========================================
+==  Text sizes config  ====================
+===========================================
+*/
+$size-xs: rem(12.642px);
+$size-sm: rem(14.222px);
+
+$size-base: rem(16px);
+
+$size-xl: rem(18px);
+$size-2xl: rem(20.25px);
+$size-3xl: rem(22.781px);
+$size-4xl: rem(28.833px);
+$size-5xl: rem(36.491px);
+$size-6xl: rem(46.184px);
+$size-7xl: rem(58.46px);
+$size-8xl: rem(65.758px);
+
+$text-sizing: (xs: $size-xs, sm: $size-sm, base: $size-base, xl: $size-xl, 2xl: $size-2xl, 3xl: $size-3xl, 4xl: $size-4xl, 5xl: $size-5xl, 6xl: $size-6xl, 7xl: $size-7xl, 8xl: $size-8xl);
+
+/*
+===========================================
+==  Line height sizes config  =============
+===========================================
+*/
+
+$line-size-sm: 20px;
+$line-size-base: 24px;
+$line-size-xl: 28px;
+$line-size-2xl: 32px;
+$line-size-3xl: 40px;
+$line-size-4xl: 44px;
+$line-size-5xl: 56px;
+$line-size-6xl: 64px;
+$line-size-7xl: 80px;
+
+$line-height: (sm: $line-size-sm, base: $line-size-base, xl: $line-size-xl, 2xl: $line-size-2xl, 3xl: $line-size-3xl, 4xl: $line-size-4xl, 5xl: $line-size-5xl, 6xl: $line-size-6xl, 7xl: $line-size-7xl);
+
+/*
+===========================================
+==  Letter Spacing config     =============
+===========================================
+*/
+$letter-spacing: (base: 1px, tightest: -0.05em, tighter: -0.025em, tight: -0.015em, normal: 0em, wide: 0.065em, wider: 0.075em, widest: 1em);
+
+/*
+===========================================
+==  Hovers config     =============
+===========================================
+*/
+$hovers: (red: red, red-light: $red-light, gray: $gray);
+
+/*
+===========================================
+==  Colors config     =============
+===========================================
+*/
+
+$themecolors: (red: red, red-light: $red-light, gray: $gray, bluesoft: $blue-soft, gray-dark: $gray-dark, gray-light: $gray-light, white: $white, gray-extradark: $gray-extradark);
+
+/*
+===========================================
+==  Backgrounds color config     ==========
+===========================================
+*/
+
+$backgrounds: (red: $red, red-light: $red-light, red-extralight: $red-extralight, blue: $blue, gray: $gray, white: $white);
+
+/*
+===========================================
+==  Responsive Fonts config  ==============
+===========================================
+*/
+$enable-responsive-font-sizes: true;
+$font-size-base: 1.25rem;
+
+/*
+
+
+
+/*
+===========================================
+==  Fonts config                 ==========
+===========================================
+*/
+
+$font-primary: "Montserrat", "Arial Black", sans-serif;
+$font-secondary: "courier_primeregular";
+
+.font-primary {
+    font-family: $font-primary;
+}
+
+.font-secondary {
+    font-family: $font-secondary;
+}
+
+.dev {
+    border: 1px solid $redstrong;
+}
+
+.font-light {
+    font-weight: 300 !important;
+}
+
+.font-400 {
+    font-weight: 400 !important;
+}
+
+.font-700 {
+    font-weight: 700 !important;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
