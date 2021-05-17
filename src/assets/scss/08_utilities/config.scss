@@ -8,11 +8,11 @@ $color-blue-3: rgba(89, 89, 109, 1);
 $color-blue-4: rgba(117, 117, 133, 1);
 $color-blue-5: rgba(145, 145, 158, 1);
 $color-blue-6: rgba(172, 172, 182, 1);
-$color--blue-7: rgba(200, 200, 206, 1);
+$color-blue-7: rgba(200, 200, 206, 1);
 $color-blue-8: rgba(227, 227, 231, 1);
 $color-white: rgba(255, 255, 255, 1);
 
-$themecolors: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
+$themecolors: (pink-1: $color-pink-1, pink-2: $color-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
 
 // END COLORS
 
@@ -63,7 +63,7 @@ $letter-spacing: (base: 1px, tightest: -0.05em, tighter: -0.025em, tight: -0.015
 ==  Hovers config     =============
 ===========================================
 */
-$hovers: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
+$hovers: (pink-1: $color-pink-1, pink-2: $color-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
 
 /*
 ===========================================
@@ -71,7 +71,7 @@ $hovers: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue-1, b
 ===========================================
 */
 
-$themecolors: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
+$themecolors: (pink-1: $color-pink-1, pink-2: $color-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
 
 /*
 ===========================================
@@ -79,7 +79,7 @@ $themecolors: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue
 ===========================================
 */
 
-$backgrounds: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
+$backgrounds: (pink-1: $color-pink-1, pink-2: $color-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
 
 /*
 ===========================================
@@ -105,12 +105,8 @@ $font-primary: "Raleway", sans-serif;
     font-family: $font-primary;
 }
 
-.font-secondary {
-    font-family: $font-secondary;
-}
-
 .dev {
-    border: 1px solid $redstrong;
+    border: 1px solid red;
 }
 
 .font-200 {

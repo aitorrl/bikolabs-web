@@ -18,5 +18,8 @@
     "jquery": "^3.3.1",
     "modularscale-sass": "^3.0.8",
     "typi": "^3.2.0"
+  },
+  "dependencies": {
+    "sass-rem": "^2.0.1"
   }
 }
