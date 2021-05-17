@@ -1,19 +1,18 @@
 // COLORS
 
-$red: #E73F39;
-$redstrong: #AD2F2B;
-$red-light: #fad9d7;
-$red-extralight: rgba(231, 63, 57, 0.05);
-$black: #000;
-$black-soft: #111;
-$gray-extradark: #4E5C65;
-$gray: #999;
-$gray-dark: #666;
-$gray-light: #DDE4E9;
-$white: #ffffff;
-$blue: #132631;
-$blue-ligth: rgba(19, 38, 49, 0.1);
-$blue-soft: #899398;
+$color-pink-1: rgba(235, 84, 130, 1);
+$color-pink-2: rgba(176, 63, 98, 1);
+$color-blue-1: rgba(34, 34, 60, 1);
+$color-blue-2: rgba(62, 62, 84, 1);
+$color-blue-3: rgba(89, 89, 109, 1);
+$color-blue-4: rgba(117, 117, 133, 1);
+$color-blue-5: rgba(145, 145, 158, 1);
+$color-blue-6: rgba(172, 172, 182, 1);
+$color--blue-7: rgba(200, 200, 206, 1);
+$color-blue-8: rgba(227, 227, 231, 1);
+$color-white: rgba(255, 255, 255, 1);
+
+$themecolors: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
 
 // END COLORS
 
@@ -22,21 +21,17 @@ $blue-soft: #899398;
 ==  Text sizes config  ====================
 ===========================================
 */
-$size-xs: rem(12.642px);
-$size-sm: rem(14.222px);
 
+$size-sm: rem(12px);
 $size-base: rem(16px);
+$size-xl: rem(20px);
+$size-2xl: rem(28px);
+$size-3xl: rem(38px);
+$size-4xl: rem(50px);
+$size-5xl: rem(67px);
+$size-6xl: rem(90px);
 
-$size-xl: rem(18px);
-$size-2xl: rem(20.25px);
-$size-3xl: rem(22.781px);
-$size-4xl: rem(28.833px);
-$size-5xl: rem(36.491px);
-$size-6xl: rem(46.184px);
-$size-7xl: rem(58.46px);
-$size-8xl: rem(65.758px);
-
-$text-sizing: (xs: $size-xs, sm: $size-sm, base: $size-base, xl: $size-xl, 2xl: $size-2xl, 3xl: $size-3xl, 4xl: $size-4xl, 5xl: $size-5xl, 6xl: $size-6xl, 7xl: $size-7xl, 8xl: $size-8xl);
+$text-sizing: (sm: $size-sm, base: $size-base, xl: $size-xl, 2xl: $size-2xl, 3xl: $size-3xl, 4xl: $size-4xl, 5xl: $size-5xl, 6xl: $size-6xl);
 
 /*
 ===========================================
@@ -68,7 +63,7 @@ $letter-spacing: (base: 1px, tightest: -0.05em, tighter: -0.025em, tight: -0.015
 ==  Hovers config     =============
 ===========================================
 */
-$hovers: (red: red, red-light: $red-light, gray: $gray);
+$hovers: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
 
 /*
 ===========================================
@@ -76,7 +71,7 @@ $hovers: (red: red, red-light: $red-light, gray: $gray);
 ===========================================
 */
 
-$themecolors: (red: red, red-light: $red-light, gray: $gray, bluesoft: $blue-soft, gray-dark: $gray-dark, gray-light: $gray-light, white: $white, gray-extradark: $gray-extradark);
+$themecolors: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
 
 /*
 ===========================================
@@ -84,7 +79,7 @@ $themecolors: (red: red, red-light: $red-light, gray: $gray, bluesoft: $blue-sof
 ===========================================
 */
 
-$backgrounds: (red: $red, red-light: $red-light, red-extralight: $red-extralight, blue: $blue, gray: $gray, white: $white);
+$backgrounds: (pink-1: $color-pink-1, pink-2: $xoloe-pink-2, blue-1: $color-blue-1, blue-2: $color-blue-2, blue-3: $color-blue-3, blue-4: $color-blue-4, blue-5: $color-blue-5, blue-6: $color-blue-6, blue-7: $color-blue-7, blue-8: $color-blue-8, white: $color-white);
 
 /*
 ===========================================
@@ -104,8 +99,7 @@ $font-size-base: 1.25rem;
 ===========================================
 */
 
-$font-primary: "Montserrat", "Arial Black", sans-serif;
-$font-secondary: "courier_primeregular";
+$font-primary: "Raleway", sans-serif;
 
 .font-primary {
     font-family: $font-primary;
@@ -119,8 +113,8 @@ $font-secondary: "courier_primeregular";
     border: 1px solid $redstrong;
 }
 
-.font-light {
-    font-weight: 300 !important;
+.font-200 {
+    font-weight: 200 !important;
 }
 
 .font-400 {
@@ -129,12 +123,4 @@ $font-secondary: "courier_primeregular";
 
 .font-700 {
     font-weight: 700 !important;
-}
-
-.font-bold {
-    font-weight: bold;
-}
-
-.cursor-pointer {
-    cursor: pointer !important;
 }
