@@ -1,0 +1,38 @@
+.aaa {
+    width: 1300px;
+    height: 100vh;
+}
+
+.bbb {
+    width: 601px;
+    height: 100vh;
+}
+
+.ccc {
+    width: 500px;
+    height: 100vh;
+}
+
+.ddd {
+    width: 1000px;
+    height: 100vh;
+}
+
+.horizontal-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.scroll-section {
+    flex: 0 0 auto;
+}
+
+.dev2 {
+    border: 3px solid rgb(0, 255, 98);
+}
+
+.horizontal-scroll {
+    width: 100vw;
+    height: 100vh;
+}

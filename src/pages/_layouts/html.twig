@@ -31,6 +31,8 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
     <style>
         /* inject:styles-critical:css */
         /* endinject */
@@ -41,7 +43,7 @@
 
 </head>
 
-<body class="page-{{currentMenu}}">
+<body>
     {% block body %}
     {% endblock %}
     <!-- inject:vendors:js -->
@@ -49,5 +51,24 @@
     <!-- inject:js -->
     <!-- endinject -->
 </body>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script>
+    const swiper = new Swiper('.horizontal-scroll', {
+        // Optional parameters
+        direction: 'horizontal',
+        mousewheel: true,
+        loop: false,
+        freeMode: true,
+
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+
+</script>
 
 </html>

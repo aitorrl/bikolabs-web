@@ -1,12 +1,22 @@
 {# ----- HOME ----- #}
 {% extends "layouts::/page.twig" %}
 {% block page %}
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="font-primary text-6xl font-700 color-blue-1">AAA Loren Ipsum</div>
+
+<div class="horizontal-scroll">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide aaa dev bg-blue-1">
+            <p class="text-4xl font-700 p-5 color-white">Loren ipsum</p>
         </div>
+        <div class="swiper-slide bbb dev bg-blue-2">Slide 2</div>
+        <div class="swiper-slide ccc dev bg-blue-5">Slide 3</div>
+        <div class="swiper-slide ccc dev bg-pink-1">Slide 3</div>
     </div>
+
+    <div class="swiper-scrollbar"></div>
 </div>
+
+
+
+
 
 {% endblock %}
