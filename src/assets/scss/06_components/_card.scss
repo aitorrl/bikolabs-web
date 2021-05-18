@@ -31,6 +31,7 @@
 
 .section {
     height: 100vh;
+    position: relative;
 
     @include media-breakpoint-down(md) {
         border: 2px solid red;
@@ -55,3 +56,12 @@
 }
 
 // Menu
+
+.titlewrap {
+    height: 100%;
+    width: 100px;
+}
+
+.titlewrap-rotate {
+    transform: rotate(-90deg);
+}
