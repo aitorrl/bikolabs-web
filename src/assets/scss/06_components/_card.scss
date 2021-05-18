@@ -31,6 +31,10 @@
 
 .section {
     height: 100vh;
+
+    @include media-breakpoint-down(md) {
+        border: 2px solid red;
+    }
 }
 
 .card-1-pos__1 {
@@ -51,11 +55,3 @@
 }
 
 // Menu
-
-.nav-init {
-    width: 80px;
-    height: 100%;
-    border-right: 1px solid #E5E5E5;
-    text-align: center;
-    padding: 20px 0px;
-}
