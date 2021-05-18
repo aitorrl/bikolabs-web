@@ -32,6 +32,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
 
     <style>
         /* inject:styles-critical:css */
@@ -52,8 +53,8 @@
     <!-- endinject -->
 </body>
 
-
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
 <script>
     const swiper = new Swiper('.horizontal-scroll', {
         // Optional parameters
@@ -67,6 +68,34 @@
         scrollbar: {
             el: '.swiper-scrollbar',
         },
+    });
+
+</script>
+
+
+{# Gsap #}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+{#
+<script>
+    let tween = gsap.to(".anima", {
+        x: 100,
+        id: "test",
+        scrollTrigger: ".trigger"
+    });
+</script> #}
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js">
+</script>
+
+<script>
+    const scroller = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        direction: 'horizontal'
     });
 
 </script>

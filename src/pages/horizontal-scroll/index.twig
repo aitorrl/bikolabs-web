@@ -1,0 +1,44 @@
+{% extends "layouts::/page.twig" %}
+{% block page %}
+{# Slicker #}
+<div class="horizontal-scroll">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide aaa dev bg-blue-1">
+            <p class="text-3xl font-700 p-5 color-white">Investigamos y modelamos<br>
+                la potencia e implicaciones<br>
+                de la interacción presente y futura<br>
+                entre personas y tecnología.</p>
+
+        </div>
+
+        <div class="aaa dev bg-blue-1 swiper-wrapper" data-scroll-section>
+            <p data-scroll class="text-4xl font-700 p-5 color-white">Loren ipsum</p>
+
+            <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="6" style="margin-left: 10vw;"
+                class="text-base font-200 p-5 color-white">Imagen generada por media de una inteligencia artificial,
+                <br>interpretando la frase "The sky above the port was the color
+                of television" de William Gibson.
+            </p>
+
+        </div>
+
+
+        <div id="test" class="swiper-slide bbb dev bg-blue-2">
+            <p class="text-4xl font-700 p-5 my-5 color-white anima">AAAA Loren ipsum</p>
+        </div>
+        <div class="swiper-slide ccc dev bg-blue-5">
+            <p class="text-5xl font-700 p-5 color-white">BBBB Loren ipsum</p>
+        </div>
+        <div class="swiper-slide ccc dev bg-pink-1">
+            <p class="text-5xl font-700 p-5 color-white m-6">BBBB Loren ipsum</p>
+        </div>
+    </div>
+
+    <div class="swiper-scrollbar"></div>
+</div>
+
+
+
+
+
+{% endblock %}
