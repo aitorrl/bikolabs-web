@@ -100,9 +100,14 @@ $font-size-base: 1.25rem;
 */
 
 $font-primary: "Raleway", sans-serif;
+$font-secondary: "Chakra Petch", sans-serif;
 
 .font-primary {
     font-family: $font-primary;
+}
+
+.font-secondary {
+    font-family: $font-secondary;
 }
 
 .dev {
