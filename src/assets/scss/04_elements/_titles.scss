@@ -18,6 +18,31 @@ $color-white: rgba(255, 255, 255, 1);
     @extend .line-5xl;
 }
 
+.title-5 {
+    @extend .font-700;
+
+    @extend .text-5xl;
+
+    @extend .line-5xl;
+}
+
+.title-3 {
+    @extend .font-700;
+
+    @extend .text-3xl;
+
+    @extend .line-4xl;
+}
+
+.antetitle {
+    @extend .text-sm;
+
+    @extend .line-sm;
+
+    text-transform: uppercase;
+    color: $color-blue-4;
+}
+
 .title-outline {
     -webkit-text-stroke-width: 1px;
     -moz-text-stroke-width: 1px;
