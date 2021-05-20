@@ -97,7 +97,17 @@
     const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
-        direction: 'horizontal'
+        direction: 'horizontal',
+
+        tablet: {
+            smooth: true,
+            direction: 'horizontal',
+
+        },
+        smartphone: {
+            smooth: true,
+
+        }
     });
 
 </script>
