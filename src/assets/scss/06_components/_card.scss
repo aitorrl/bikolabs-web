@@ -22,6 +22,14 @@
     border: 2px solid rosybrown;
 }
 
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
 .horizontal-scroll {
     display: flex;
     flex-wrap: nowrap;
@@ -140,4 +148,33 @@
 
 .descripcion-ficha {
     padding: 20px 200px;
+}
+
+.investigacion-title__position {
+    position: relative;
+    left: 60px;
+    z-index: 11111;
+}
+
+.investigacion-img__position {
+    position: relative;
+    right: 105px;
+}
+
+.investigacion-experimento__wrap {
+    width: 700px;
+    height: 600px;
+    padding: 80px 190px 80px 80px;
+    position: relative;
+    right: -160px;
+}
+
+.investigacion-experimento__img {
+    margin: 30px;
+    z-index: 11111;
+}
+
+.investigacion-text__wrap {
+    width: 500px;
+    height: auto;
 }

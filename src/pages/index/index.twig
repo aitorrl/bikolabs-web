@@ -7,173 +7,207 @@
 
 <div class="bg-blue-1" data-scroll-container>
 
-    <div class="section bg-blue-1 p-6" data-scroll-section>
-        <div class="d-flex flex-column flex-md-row">
-            <div class="d-flex h-100v align-items-center card-1-pos__1">
-                <h1 class="title-4 color-white line-3xl pt-5">Investigamos y modelamos<br>
-                    la potencia e implicaciones<br>
-                    de la interacción presente y futura<br>
-                    entre personas y tecnología.</h1>
-            </div>
-            <div class="card-1-pos__2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
-                <img class="img-fluid" src="/assets/images/gibson.png"
-                    alt="Imagen generada por media de una inteligencia artificia">
-                <p class="text-sm color-blue-7 pt-3">Imagen generada por media de una inteligencia artificial,
-                    interpretando
-                    la frase "The sky above the port was the color<br>
-                    of television" de William Gibson.</p>
-            </div>
-
-        </div>
-        <div class="" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
-            <img src="/assets/images/arrow.png" alt="Flecha de continuación">
-        </div>
+  <div class="section bg-blue-1 p-6" data-scroll-section>
+    <div class="d-flex flex-column flex-md-row">
+      <div class="d-flex h-100v align-items-center card-1-pos__1">
+        <h1 class="title-4 color-white line-3xl pt-5">Investigamos y modelamos<br>
+          la potencia e implicaciones<br>
+          de la interacción presente y futura<br>
+          entre personas y tecnología.</h1>
+      </div>
+      <div class="card-1-pos__2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
+        <img class="img-fluid" src="/assets/images/gibson.png"
+          alt="Imagen generada por media de una inteligencia artificia">
+        <p class="text-sm color-blue-7 pt-3">Imagen generada por media de una inteligencia artificial,
+          interpretando
+          la frase "The sky above the port was the color<br>
+          of television" de William Gibson.</p>
+      </div>
 
     </div>
+    <div class="" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
+      <img src="/assets/images/arrow.png" alt="Flecha de continuación">
+    </div>
 
-    {# Lineas de Investigación #}
-    {% include "@base/sections/lineas-de-investigacion.twig" %}
-    {# Fin Lineas de Investigación #}
+  </div>
 
+  <!-- Lineas de Investigación  -->
+  {% include "@base/sections/lineas-de-investigacion.twig" %}
+  <!-- Fin Lineas de Investigación  -->
 
+  <!-- Explicabilidad IA -->
+  <div class="section bg-blue-1" data-scroll-section>
+    <div class="d-flex h-100v">
 
-    <div class="section bg-blue-1 Xdev" data-scroll-section>
-        {# Paginador #}
-        {# <div>
-            <div class="d-flex flex-row py-5 h-100 align-items-center">
-                <div class="text-sm color-blue-4 my-4"><span>01s</span></div>
-                <div class="ab ml-5"></div>
+      <!-- Paginador -->
+      <div class="ly-investigacion--1">
+        {% include "@base/paginador/paginador.twig" %}
+      </div>
+      <!-- Fin Paginador -->
+
+      <!-- Title + Image  -->
+      <div class="ly-investigacion--2">
+        <div class="d-flex h-100v">
+          <div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position">
+            <h2 class="title-4 color-white">Explicabilidad IA</h2>
+          </div>
+          <div class="d-flex flex-column align-items-center justify-content-center investigacion-img__position">
+            <img src="/assets/images/sky.png" alt="Imagen Gibsom">
+          </div>
+        </div>
+      </div>
+      <!-- Fin Title + Image  -->
+
+      <!-- Media -->
+      <div class="ly-investigacion--3">
+        <div class="d-flex h-100v flex-column">
+          <div class="flex-grow-1">
+            <div class="investigacion-text__wrap p-4 ml-8 my-5">
+              <p class="color-white text-xl line-2xl">La transparencia y la interpretabilidad son temas
+                que van a marcar la agenda del desarrollo tecnológico en los próximos
+                años. Investigamos cómo hacer entendibles las inteligencias artificiales y qué impacto
+                tienen sus explicaciones en los
+                tomadores de decisiones.
+              </p>
             </div>
-        </div> #}
-
-        {# Fin Paginador #}
-
-        {# Title vertical #}
-        {# <div class="titlewrap d-flex flex-column justify-content-center">
-            <div class="titlewrap-rotate">
-                <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2"
-                    class="title-5 color-white p-5">
-                    Explicabilidad</h2>
-            </div>
-        </div> #}
-        {# Fin Title vertical #}
-
-        <div class="d-flex">
-
-
-            {# Paginador #}
-            <div class="l1">
-                <div class="d-flex flex-row py-5 h-100 align-items-center">
-                    <div class="text-sm color-blue-4 my-4"><span>01</span></div>
-                    <div class="ab ml-3"></div>
-                </div>
-            </div>
-            {# Fin Paginador #}
-
-
-            {# Title vertical #}
-            <div class="l2">
-                <div class="titlewrap d-flex flex-column justify-content-center">
-                    <div class="titlewrap-rotate">
-                        <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2"
-                            class="title-5 color-white p-5">
-                            Explicabilidad</h2>
-                    </div>
-                </div>
-            </div>
-            {# Fin Title vertical #}
-
-
-            {# Contenido #}
-            <div class="l3 p-4">
-                <div class="d-flex">
-                    <div class="d-flex flex-column justify-content-center">
-                        <img src="/assets/images/sky.png" alt="Imagen del asistente Sebastian">
-                    </div>
-                    <div class="d-flex flex-column justify-content-center">
-                        <div class="descripcion-ficha">
-                            <p class="color-white text-xl line-2xl">La transparencia y la interpretabilidad son temas
-                                que van a marcar la agenda del desarrollo tecnológico en los próximos
-                                años. Investigamos cómo hacer entendibles las inteligencias artificiales y qué impacto
-                                tienen sus explicaciones en los
-                                tomadores de decisiones.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
+          </div>
+          <div class="flex-grow-1">
+            <div class="d-flex justify-content-end">
+              <div class="investigacion-experimento__wrap bg-white">
                 <div>
-
+                  <h4 class="mb-2 antetitle">Experimento</h4>
+                  <h3 class="title-3 color-blue-1">Sebastian: el<br> asistente que controla al asistente</h3>
+                  <p class="color-blue-4">Para visibilizar la carencia de control que tenemos sobre los altavoces
+                    inteligentes, creamos a Sebastian, un
+                    interruptor on/off por voz para decidir, activamente, cuándo permitir o no la escucha.</p>
                 </div>
-
-
-
-            </div>
-            {# Fin Contenido #}
-
-            {# Media #}
-            <div class="l4 bg-white">
-                <div class="py-3 px-7 d-flex flex-column justify-content-between h-100">
-                    <div class="pt-4">
-                        <h4 class="mb-2 antetitle">Experimento</h4>
-                        <h3 class="title-3 color-blue-1">Sebastian: el asistente que controla al asistente</h3>
-                        <p class="color-blue-4">Para visibilizar la carencia de control que tenemos sobre los altavoces
-                            inteligentes, creamos a Sebastian, un
-                            interruptor on/off por voz para decidir, activamente, cuándo permitir o no la escucha.</p>
-                    </div>
-
-
-                    <div data-scroll data-scroll-speed="2" style="margin-left: 3vw;">
-                        <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
-                    </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="investigacion-experimento__img">
+                  <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
                 </div>
+              </div>
             </div>
-            {# Fin Media #}
-
-
-
-
+          </div>
         </div>
-
+      </div>
+      <!-- Fin Media -->
     </div>
 
+  </div>
+  <!-- Fin Explicabilidad IA -->
 
 
+  <div class="section bg-blue-1 Xdev" data-scroll-section>
+
+    <div class="d-flex">
 
 
+      {# Paginador #}
+      <div class="l1">
+        {% include "@base/paginador/paginador.twig" %}
+      </div>
+      {# Fin Paginador #}
 
-    <div class="section bg-blue-1" data-scroll-section>
-        <p data-scroll class="text-4xl font-700 p-5 color-white">BBBBBB Loren ipsum</p>
 
-        <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="8" style="margin-left: 20vw;"
-            class="text-base font-200 p-5 color-white">Imagen generada por media de una inteligencia artificial,
-            <br>interpretando la frase "The sky above the port was the color
-            of television" de William Gibson.
-        </p>
+      {# Title vertical #}
+      <div class="l2">
+        {% include "@base/title-vertical/title-vertical.twig" %}
+      </div>
+      {# Fin Title vertical #}
 
-    </div>
 
-    <div name="curso" class="section bg-pink-1" data-scroll-section>
+      {# Contenido #}
+      <div class="l3 p-4">
+        <div class="d-flex">
+          <div class="d-flex flex-column justify-content-center">
+            <img src="/assets/images/sky.png" alt="Imagen del asistente Sebastian">
+          </div>
+          <div class="d-flex flex-column justify-content-center">
+            <div class="descripcion-ficha">
+              <p class="color-white text-xl line-2xl">La transparencia y la interpretabilidad son temas
+                que van a marcar la agenda del desarrollo tecnológico en los próximos
+                años. Investigamos cómo hacer entendibles las inteligencias artificiales y qué impacto
+                tienen sus explicaciones en los
+                tomadores de decisiones.
+              </p>
+            </div>
+
+          </div>
+        </div>
         <div>
-            <h2 class="text-2xl font-700" data-scroll data-scroll-speed="1">Imagen generada por media</h2>
-            <div class="rotate">
-                <p class="text-4xl" data-scroll data-scroll-speed="3">William Gibson.</p>
-            </div>
 
         </div>
-    </div>
 
-    <div class="section bg-blue-1" data-scroll-section>
-        {# Title vertical outline #}
-        <div class="titlewrap d-flex flex-column justify-content-end">
-            <div class="titlewrap-rotate">
-                <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" class="title-outline p-5">
-                    Nuestro proceso</h2>
-            </div>
+
+
+      </div>
+      {# Fin Contenido #}
+
+      {# Media #}
+      <div class="l4 bg-white">
+        <div class="py-3 px-7 d-flex flex-column justify-content-between h-100">
+          <div class="pt-4">
+            <h4 class="mb-2 antetitle">Experimento</h4>
+            <h3 class="title-3 color-blue-1">Sebastian: el asistente que controla al asistente</h3>
+            <p class="color-blue-4">Para visibilizar la carencia de control que tenemos sobre los altavoces
+              inteligentes, creamos a Sebastian, un
+              interruptor on/off por voz para decidir, activamente, cuándo permitir o no la escucha.</p>
+          </div>
+
+
+          <div>
+            <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
+          </div>
         </div>
-        {# Fin Title vertical outline #}
+      </div>
+      {# Fin Media #}
+
+
+
+
     </div>
 
+  </div>
+
+
+
+
+
+
+
+
+  <div class="section bg-blue-1" data-scroll-section>
+    <p data-scroll class="text-4xl font-700 p-5 color-white">BBBBBB Loren ipsum</p>
+
+    <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="8" style="margin-left: 20vw;"
+      class="text-base font-200 p-5 color-white">Imagen generada por media de una inteligencia artificial,
+      <br>interpretando la frase "The sky above the port was the color
+      of television" de William Gibson.
+    </p>
+
+  </div>
+
+  <div name="curso" class="section bg-pink-1" data-scroll-section>
+    <div>
+      <h2 class="text-2xl font-700" data-scroll data-scroll-speed="1">Imagen generada por media</h2>
+      <div class="rotate">
+        <p class="text-4xl" data-scroll data-scroll-speed="3">William Gibson.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section bg-blue-1" data-scroll-section>
+    {# Title vertical outline #}
+    <div class="titlewrap d-flex flex-column justify-content-end">
+      <div class="titlewrap-rotate">
+        <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" class="title-outline p-5">
+          Nuestro proceso</h2>
+      </div>
+    </div>
+    {# Fin Title vertical outline #}
+  </div>
 
 </div>
 
