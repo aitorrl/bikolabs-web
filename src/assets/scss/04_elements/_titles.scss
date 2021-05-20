@@ -34,6 +34,14 @@ $color-white: rgba(255, 255, 255, 1);
     @extend .line-4xl;
 }
 
+.title-1 {
+    @extend .font-700;
+
+    @extend .text-xl;
+
+    @extend .line-4xl;
+}
+
 .antetitle {
     @extend .text-sm;
 
