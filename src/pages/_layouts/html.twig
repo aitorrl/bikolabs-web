@@ -79,14 +79,82 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
-{#
-<script>
-    let tween = gsap.to(".anima", {
-        x: 100,
-        id: "test",
-        scrollTrigger: ".trigger"
+
+<!-- <script>
+    let tween = gsap.to(".lab", {
+        width: 300,
+        duration: 1.5,
     });
-</script> #}
+</script> -->
+<!-- Timeline -->
+<script>
+    // instantiate Animahome
+    const tl = new TimelineMax();
+
+    tl
+
+
+        .set(".lab", {
+            autoAlpha: 0,
+            width: 0,
+        })
+
+
+        .set(".lab1", {
+            autoAlpha: 0,
+            width: 0,
+        })
+
+        .set(".lab2", {
+            autoAlpha: 0,
+            width: 0,
+        })
+
+        ////
+
+
+        .to(".lab", 2, {
+            autoAlpha: 1,
+            width: 300,
+            delay: 1,
+        })
+
+
+
+        .to(".lab", 1, {
+            autoAlpha: 0,
+            width: 0,
+        })
+
+
+        .to(".lab1", 2, {
+            autoAlpha: 1,
+            width: 300,
+        })
+
+        .to(".lab1", 1, {
+            autoAlpha: 0,
+            width: 0,
+        })
+
+        .to(".lab2", 2, {
+            autoAlpha: 1,
+            width: 300,
+
+        })
+
+        .to(".lab2", 1, {
+            autoAlpha: 0,
+            width: 0,
+
+        })
+
+
+
+
+
+
+</script>
 
 
 
@@ -106,7 +174,7 @@
         },
         smartphone: {
             smooth: true,
-
+            direction: 'horizontal',
         }
     });
 
