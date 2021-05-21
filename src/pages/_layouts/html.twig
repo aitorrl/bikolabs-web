@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="es-es">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{title}}</title>
-    <meta name="title" content="{{title}} | {{site.name}}" />
-    <meta name="description" content="{{description}}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>{{title}}</title>
+		<meta name="title" content="{{title}} | {{site.name}}"/>
+		<meta
+		name="description" content="{{description}}">
 
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="{{twitter.card}}">
-    <meta name="twitter:site" content="{{twitter.site}}">
-    <meta name="twitter:title" content="{{twitter.title}}">
-    <meta name="twitter:description" content="{{twitter.description}}">
-    <meta name="twitter:creator" content="{{twitter.creator}}">
-    <!-- Las imágenes de sumario de Twitter deben ser de al menos 200x200px -->
-    <meta name="twitter:image" content="{{twitter.image}}">
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="{{twitter.card}}">
+		<meta name="twitter:site" content="{{twitter.site}}">
+		<meta name="twitter:title" content="{{twitter.title}}">
+		<meta name="twitter:description" content="{{twitter.description}}">
+		<meta
+		name="twitter:creator" content="{{twitter.creator}}">
+		<!-- Las imágenes de sumario de Twitter deben ser de al menos 200x200px -->
+		<meta
+		name="twitter:image" content="{{twitter.image}}">
 
-    <!-- Open Graph data -->
-    <meta property="og:title" content="{{og.title}}" />
-    <meta property="og:description" content="{{og.description}}" />
-    <meta property="og:type" content="{{og.type}}" />
-    <meta property="og:url" content="{{site.url}}" />
-    <meta property="og:site_name" content="{{site.name}}">
-    <meta property="og:image" content="{{og.image}}" />
-    <meta property="og:locale" content="{{og.locale}}" />
+		<!-- Open Graph data -->
+		<meta property="og:title" content="{{og.title}}"/>
+		<meta property="og:description" content="{{og.description}}"/>
+		<meta property="og:type" content="{{og.type}}"/>
+		<meta property="og:url" content="{{site.url}}"/>
+		<meta property="og:site_name" content="{{site.name}}">
+		<meta property="og:image" content="{{og.image}}"/>
+		<meta property="og:locale" content="{{og.locale}}"/>
 
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Raleway:wght@200;400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js" integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<style>/* inject:styles-critical:css */
+		/* endinject */
+	</style>
 
-    <style>
-        /* inject:styles-critical:css */
-        /* endinject */
-    </style>
-
-    <!-- inject:css -->
-    <!-- endinject -->
+	<!-- inject:css -->
+	<!-- endinject -->
 
 </head>
 
 <body>
-    {% block body %}
-    {% endblock %}
-    <!-- inject:vendors:js -->
-    <!-- endinject -->
-    <!-- inject:js -->
-    <!-- endinject -->
+	{% block body %}{% endblock %}
+	<!-- inject:vendors:js -->
+<!-- endinject -->
+	<!-- inject:js -->
+	<!-- endinject -->
 </body>
 
 {#
@@ -157,11 +156,10 @@
 </script>
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
 
 <script>
+<<<<<<< HEAD
     const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
@@ -181,3 +179,21 @@
 </script>
 
 </html>
+=======
+	const scroller = new LocomotiveScroll({
+el: document.querySelector('[data-scroll-container]'),
+smooth: true,
+direction: 'horizontal',
+
+tablet: {
+smooth: true,
+direction: 'horizontal'
+
+},
+smartphone: {
+smooth: true
+
+}
+});
+</script></html>
+>>>>>>> ad3587e7e3171731780a08a8fd3f002590205f7f
