@@ -1,0 +1,22 @@
+a.btn-primary {
+    display: inline-block;
+    background-color: $color-white;
+    padding: 35px 50px;
+    font-size: 16px;
+    color: $color-blue-1;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    // svg {
+    //     transform: translate(0px, 0px);
+    // }
+
+    &:hover  {
+        background-color: orchid;
+
+        // svg {
+        //     transform: translate(0px, 30px);
+        // }
+   
+    }
+}

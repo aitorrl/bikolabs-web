@@ -20,16 +20,12 @@
     width: 130px;
     height: 100vh;
     overflow-wrap: break-word;
-
-    // background-color: rebeccapurple;
 }
 
 .l2 {
     width: 170px;
     height: 100vh;
     overflow-wrap: break-word;
-
-    // background-color: rgb(113, 100, 126);
 }
 
 .l3 {
@@ -37,8 +33,6 @@
     height: 100vh;
     overflow-wrap: break-word;
     white-space: initial !important;
-
-    // background-color: rgb(50, 36, 63);
 }
 
 .l4 {
@@ -46,10 +40,23 @@
     height: 100vh;
     overflow-wrap: break-word;
     white-space: initial !important;
-
-    // background-color: rgb(64, 2, 122);
 }
 
 .ly-proceso--2 {
     width: 1185px;
+}
+
+.text-break {
+    overflow-wrap: break-word;
+    white-space: initial !important;
+}
+
+.ly-lineas--1 {}
+
+.ly-lineas--2 {
+    width: 1230px;
+}
+
+.ly-lineas--3 {
+    width: 470px;
 }
