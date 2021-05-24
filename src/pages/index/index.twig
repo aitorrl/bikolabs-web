@@ -11,7 +11,7 @@
     <div class="d-flex flex-md-row">
       <div class="d-flex flex-column h-100v  justify-content-center align-items-center intro-wrap__left">
         <div>
-          <h2 class="title-4 color-white mb-2">Bikolabs</h2>
+          <h2 class="title-3 color-pink-1 mb-2">Bikolabs</h2>
           <h1 class="title-4 color-white line-3xl">Investigamos y modelamos<br>
             la potencia e implicaciones<br>
             de la interacción presente y futura<br>
@@ -19,8 +19,8 @@
         </div>
 
       </div>
-      <div class="intro-wrap__right dev" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
-        <!-- aqui canvas -->
+      <div class="intro-wrap__right" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">
+        <div id="canvas" class="fluid"></div>
       </div>
 
     </div>
@@ -30,9 +30,6 @@
 
   </div>
 
-  <!-- Lineas de Investigación  -->
-  {% include "@base/sections/lineas-de-investigacion.twig" %}
-  <!-- Fin Lineas de Investigación  -->
 
   <!-- Nuestro proceso  -->
   {% include "@base/bloque-nuestro-proceso/index.twig" %}
@@ -106,64 +103,5 @@
   <!-- Fin Explicabilidad IA -->
 
 
-  <div class="section bg-blue-1 Xdev" data-scroll-section>
 
-    <div class="d-flex">
-
-
-      {# Paginador #}
-      <div class="l1">
-        {% include "@base/paginador/paginador.twig" %}
-      </div>
-      {# Fin Paginador #}
-
-
-      {# Title vertical #}
-      <div class="l2">
-        {% include "@base/title-vertical/title-vertical.twig" %}
-      </div>
-      {# Fin Title vertical #}
-
-
-      {# Contenido #}
-      <div class="l3 p-4">
-        <div class="d-flex">
-          <div class="d-flex flex-column justify-content-center">
-            <img src="/assets/images/sky.png" alt="Imagen del asistente Sebastian">
-          </div>
-          <div class="d-flex flex-column justify-content-center">
-            <div class="descripcion-ficha">
-              <p class="color-white text-xl line-2xl">La transparencia y la interpretabilidad son temas
-                que van a marcar la agenda del desarrollo tecnológico en los próximos
-                años. Investigamos cómo hacer entendibles las inteligencias artificiales y qué impacto
-                tienen sus explicaciones en los
-                tomadores de decisiones.
-              </p>
-            </div>
-
-          </div>
-        </div>
-        <div>
-
-        </div>
-
-
-
-      </div>
-      {# Fin Contenido #}
-
-      <div class="section bg-blue-1" data-scroll-section>
-        {# Title vertical outline #}
-        <div class="titlewrap d-flex flex-column justify-content-end">
-          <div class="titlewrap-rotate">
-            <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" class="title-outline p-5">
-              Nuestro proceso</h2>
-          </div>
-        </div>
-        {# Fin Title vertical outline #}
-      </div>
-
-    </div>
-
-
-    {% endblock %}
+  {% endblock %}
