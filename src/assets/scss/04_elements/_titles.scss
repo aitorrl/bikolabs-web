@@ -26,6 +26,14 @@ $color-white: rgba(255, 255, 255, 1);
     @extend .line-5xl;
 }
 
+.title-6 {
+    @extend .font-700;
+
+    @extend .text-6xl;
+
+    @extend .line-5xl;
+}
+
 .title-3 {
     @extend .font-700;
 

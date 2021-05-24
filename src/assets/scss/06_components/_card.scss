@@ -180,3 +180,15 @@
     width: 500px;
     height: auto;
 }
+
+.item-proceso__wrap {
+    border-bottom: 1px solid $color-blue-4;
+}
+
+.item-proceso__container {
+    width: 480px;
+    overflow-wrap: break-word;
+    white-space: initial !important;
+    margin-left: 220px;
+    margin-right: 420px;
+}
