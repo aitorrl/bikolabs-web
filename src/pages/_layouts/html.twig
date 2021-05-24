@@ -79,6 +79,8 @@
 {# Gsap #}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
 
 
 <!-- <script>
@@ -87,79 +89,94 @@
         duration: 1.5,
     });
 </script> -->
+
+
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".intro-inf", {
+        x: 100,
+        y: 100,
+        scrollTrigger: {
+            trigger: ".ooo",
+            x: -600,
+            y: -500,
+            duration: 2,
+            ease: "power2"
+        }
+    });
+
+
+
+</script>
 <!-- Timeline -->
 <script>
     // instantiate Animahome
     const tl = new TimelineMax();
 
     tl
-
+        .set(".lab-center", {
+            width: 300,
+        })
 
         .set(".lab", {
             autoAlpha: 0,
-            width: 0,
         })
 
 
         .set(".lab1", {
             autoAlpha: 0,
-            width: 0,
         })
 
         .set(".lab2", {
             autoAlpha: 0,
-            width: 0,
+        })
+
+        .set(".lab3", {
+            autoAlpha: 0,
         })
 
         ////
 
 
-        .to(".lab", 2, {
+        .to(".lab", 1, {
             autoAlpha: 1,
-            width: 300,
-            delay: 1,
+
         })
-
-
 
         .to(".lab", 1, {
             autoAlpha: 0,
-            width: 0,
         })
 
 
-        .to(".lab1", 2, {
+        .to(".lab1", 1, {
             autoAlpha: 1,
-            width: 300,
         })
 
         .to(".lab1", 1, {
             autoAlpha: 0,
-            width: 0,
         })
 
-        .to(".lab2", 2, {
+        .to(".lab2", 1, {
             autoAlpha: 1,
-            width: 300,
-
         })
 
         .to(".lab2", 1, {
             autoAlpha: 0,
-            width: 0,
-
         })
 
 
+        .set(".lab-center", {
+            width: 160,
+        })
 
-
+        .to(".lab3", 1, {
+            autoAlpha: 1,
+        })
 
 
 </script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
-
 <script>
     const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
