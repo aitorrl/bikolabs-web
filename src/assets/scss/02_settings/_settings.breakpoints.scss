@@ -55,3 +55,25 @@ $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1340px
     top: 0;
     right: 5px;
 }
+
+// #home {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     overflow: hidden;
+// }
+
+.intro-inf {
+    width: 400px;
+    height: 400px;
+    background-color: purple;
+    will-change: transform;
+}
+
+.adivider {
+    width: 100%;
+    height: 1000px;
+    background-color: rebeccapurple;
+}
