@@ -7,16 +7,20 @@ a.btn-primary {
     text-transform: uppercase;
     font-weight: 600;
 
-    // svg {
-    //     transform: translate(0px, 0px);
-    // }
+    svg {
+        transition: all 0.5s;
+        transform: translate(0px, 0px);
+    }
+}
 
-    &:hover  {
-        background-color: orchid;
+a.btn-secondary {
+    @extend .btn-primary;
 
-        // svg {
-        //     transform: translate(0px, 30px);
-        // }
-   
+    background-color: $color-pink-1;
+}
+
+a.btn-primary:hover {
+    svg {
+        transform: translate(8px, 0px);
     }
 }

@@ -7,4 +7,22 @@
     position: fixed;
     top: 0;
     z-index: 1111111;
+
+    @include media-breakpoint-down(md) {
+        border-bottom: 1px solid $color-blue-4;
+        width: 100vw;
+        height: 70px !important;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+.nav-rotate {
+    transform: rotate(-90deg);
+    display: flex;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+        transform: none;
+    }
 }

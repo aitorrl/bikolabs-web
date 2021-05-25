@@ -130,6 +130,9 @@ $font-secondary: "Chakra Petch", sans-serif;
     text-decoration: none !important;
 }
 
-.nav-rotate {
-    transform: rotate(-90deg);
+img {
+    @include media-breakpoint-down(xl) {
+        // border: 4px solid greenyellow;
+        max-height: 80vh;
+    }
 }

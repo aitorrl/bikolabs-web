@@ -39,69 +39,12 @@
   {% include "@base/bloque-lineas-de-investigacion/index.twig" %}
   <!-- Fin Linea de investigacion  -->
 
-  <!-- Explicabilidad IA -->
-  <div class="section bg-blue-1" data-scroll-section>
-    <div class="d-flex h-100v">
+  <!-- Curso  -->
+  {% include "@base/bloque-curso/index.twig" %}
+  <!-- Fin Curso  -->
 
-      <!-- Paginador -->
-      <div class="ly-investigacion--1">
-        {% include "@base/paginador/paginador.twig" %}
-      </div>
-      <!-- Fin Paginador -->
-
-      <!-- Title + Image  -->
-      <div class="ly-investigacion--2">
-        <div class="d-flex h-100v">
-          <div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position"
-            data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
-            <h2 class="title-4 color-white">Explicabilidad IA</h2>
-          </div>
-          <div class="d-flex flex-column align-items-center justify-content-center investigacion-img__position">
-            <img src="/assets/images/sky.png" alt="Imagen Gibsom">
-          </div>
-        </div>
-      </div>
-      <!-- Fin Title + Image  -->
-
-      <!-- Media -->
-      <div class="ly-investigacion--3">
-        <div class="d-flex h-100v flex-column">
-          <div class="flex-grow-1">
-            <div class="investigacion-text__wrap p-4 ml-8 my-5">
-              <p class="color-white text-xl line-2xl">La transparencia y la interpretabilidad son temas
-                que van a marcar la agenda del desarrollo tecnológico en los próximos
-                años. Investigamos cómo hacer entendibles las inteligencias artificiales y qué impacto
-                tienen sus explicaciones en los
-                tomadores de decisiones.
-              </p>
-            </div>
-          </div>
-          <div class="flex-grow-1">
-            <div class="d-flex justify-content-end">
-              <div class="investigacion-experimento__wrap bg-white">
-                <div>
-                  <h4 class="mb-2 antetitle">Experimento</h4>
-                  <h3 class="title-3 color-blue-1 mb-3">Sebastian: el<br> asistente que controla al asistente</h3>
-                  <p class="color-blue-4">Para visibilizar la carencia de control que tenemos sobre los altavoces
-                    inteligentes, creamos a Sebastian, un
-                    interruptor on/off por voz para decidir, activamente, cuándo permitir o no la escucha.</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="investigacion-experimento__img">
-                  <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Media -->
-    </div>
-
-  </div>
-  <!-- Fin Explicabilidad IA -->
-
-
+  <!-- Equipo A  -->
+  {% include "@base/bloque-equipo-a/index.twig" %}
+  <!-- Fin Equipo A  -->
 
   {% endblock %}

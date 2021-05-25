@@ -1,10 +1,10 @@
 a {
-  color: black;
-  text-decoration: underline;
-  transition: all .3s ease;
+    color: white;
+    text-decoration: underline;
+    transition: all .3s ease;
 
-  &:hover {
-    color: darken(black, 40%);
-    text-decoration: none;
-  }
+    &:hover {
+        color: $color-blue-1;
+        text-decoration: none;
+    }
 }

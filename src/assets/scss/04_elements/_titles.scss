@@ -10,6 +10,15 @@ $color-blue-7: rgba(200, 200, 206, 1);
 $color-blue-8: rgba(227, 227, 231, 1);
 $color-white: rgba(255, 255, 255, 1);
 
+$size-sm: rem(12px);
+$size-base: rem(16px);
+$size-xl: rem(20px);
+$size-2xl: rem(28px);
+$size-3xl: rem(38px);
+$size-4xl: rem(50px);
+$size-5xl: rem(67px);
+$size-6xl: rem(90px);
+
 .title-4 {
     @extend .font-700;
 
@@ -29,15 +38,27 @@ $color-white: rgba(255, 255, 255, 1);
 .title-6 {
     @extend .font-700;
 
-    @extend .text-6xl;
+    // @extend .text-6xl;
 
     @extend .line-5xl;
+
+    @include responsive-font-size($size-6xl);
 }
 
 .title-3 {
     @extend .font-700;
 
-    @extend .text-3xl;
+    // @extend .text-3xl;
+
+    @extend .line-4xl;
+
+    @include responsive-font-size($size-3xl);
+}
+
+.title-2 {
+    @extend .font-700;
+
+    @extend .text-2xl;
 
     @extend .line-4xl;
 }
@@ -57,6 +78,12 @@ $color-white: rgba(255, 255, 255, 1);
 
     text-transform: uppercase;
     color: $color-blue-4;
+}
+
+.subtitle {
+    @extend .text-xl;
+
+    @extend .line-2xl;
 }
 
 .title-outline {
