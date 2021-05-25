@@ -1,7 +1,7 @@
 a.btn-primary {
     display: inline-block;
     background-color: $color-white;
-    padding: 35px 50px;
+    padding: 25px 35px;
     font-size: 16px;
     color: $color-blue-1;
     text-transform: uppercase;
@@ -19,7 +19,17 @@ a.btn-secondary {
     background-color: $color-pink-1;
 }
 
+a.btn-secondary:hover {
+    color: $color-white !important;
+
+    svg {
+        transform: translate(8px, 0px);
+    }
+}
+
 a.btn-primary:hover {
+    color: $color-pink-1;
+
     svg {
         transform: translate(8px, 0px);
     }
