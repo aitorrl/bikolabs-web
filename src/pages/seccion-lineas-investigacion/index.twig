@@ -2,496 +2,497 @@
 {% extends "layouts::/page.twig" %}
 {% block page %}
 
-{# Menu #}
-{% include "@base/menu/menu.twig" %}
+	{# Menu #}
+	{% include "@base/menu/menu.twig" %}
 
-<div class="bg-blue-1" data-scroll-container>
+	<div
+		class="bg-blue-1" data-scroll-container>
 
-  <!-- Intro -->
-  <div class="section bg-blue-1 ml-8" data-scroll-section>
-    <div class="ly-intro pl-8">
-      <div>
-        <h1 class="title-5 color-white pt-8 mb-7 line-7xl">Líneas de <br>investigacion<br> abiertas</h1>
-      </div>
-      <div class="pl-6">
-        <div class="d-flex color-white align-items-center">
-          <img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha">
-          <a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="#explicabilidad" data-scroll-to>
-            Explicabilidad IA
-          </a>
-        </div>
-        <div class="d-flex color-white align-items-center">
-          <img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha">
-          <a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="#toma-decisones" data-scroll-to>
-            Toma de decisiones
-          </a>
-        </div>
-        <div class="d-flex color-white align-items-center">
-          <img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha">
-          <a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="" data-scroll-to>
-            Belleza y arte
-          </a>
-        </div>
-        <div class="d-flex color-white align-items-center">
-          <img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha" data-scroll-to>
-          <a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="" data-scroll-to>
-            Conducta IA
-          </a>
-        </div>
-        <div class="d-flex color-white align-items-center">
-          <img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha">
-          <a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="">
-            Futuros
-          </a>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-  <!-- Intro -->
-  <div id="cv" class="section bg-blue-1" data-scroll-section>
-    <div class="d-flex h-100v">
-    <div id="canvas" class="fluid"></div>
-    </div>
-  </div>
+		<!-- Intro -->
+		<div class="section bg-blue-1 ml-8" data-scroll-section>
+			<div class="ly-intro pl-8">
+				<div>
+					<h1 class="title-5 color-white pt-8 mb-7 line-7xl">Líneas de
+						<br>investigacion<br>
+						abiertas</h1>
+				</div>
+				<div class="pl-6">
+					<div class="d-flex color-white align-items-center">
+						<img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha">
+						<a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="#explicabilidad" data-scroll-to>
+							Explicabilidad IA
+						</a>
+					</div>
+					<div class="d-flex color-white align-items-center">
+						<img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha">
+						<a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="#toma-decisones" data-scroll-to>
+							Toma de decisiones
+						</a>
+					</div>
+					<div class="d-flex color-white align-items-center">
+						<img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha">
+						<a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="" data-scroll-to>
+							Belleza y arte
+						</a>
+					</div>
+					<div class="d-flex color-white align-items-center">
+						<img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha" data-scroll-to>
+						<a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="" data-scroll-to>
+							Conducta IA
+						</a>
+					</div>
+					<div class="d-flex color-white align-items-center">
+						<img class="pb-1" src="/assets/images/arrow.svg" alt="Linea de investigación flecha">
+						<a class="decoration-none color-white ml-3 title-1 hover-pink-1" href="">
+							Futuros
+						</a>
+					</div>
+				</div>
 
 
-  <!-- Explicabilidad IA -->
-  <div id="explicabilidad" class="section bg-blue-1" data-scroll-section>
-    <div class="d-flex h-100v">
-
-      <!-- Paginador -->
-      <div class="ly-investigacion--1">
-        {% include "@base/paginador/paginador.twig" %}
-      </div>
-      <!-- Fin Paginador -->
-
-      <!-- Title + Image  -->
-      <div class="ly-investigacion--2">
-        <div class="d-flex h-100v">
-          <div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position"
-            data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
-            <h2 class="title-4 color-white">Explicabilidad IA</h2>
-          </div>
-          <div
-            class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
-            <img src="/assets/images/sky.png" alt="Imagen Gibsom">
-            <p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
-              interpretando<br>
-              la
-              frase "The sky above the port was the color<br>
-              of television" de William Gibson.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Title + Image  -->
-
-      <!-- Media -->
-      <div class="ly-investigacion--3">
-        <div class="d-flex h-100v flex-column">
-          <div class="flex-grow-1">
-            <div class="investigacion-text__wrap p-4 ml-8 my-5">
-              <p class="color-white text-xl line-2xl">La transparencia y la interpretabilidad son temas
-                que van a marcar la agenda del desarrollo tecnológico en los próximos
-                años. Investigamos cómo hacer entendibles las inteligencias artificiales y qué impacto
-                tienen sus explicaciones en los
-                tomadores de decisiones.
-              </p>
-            </div>
-          </div>
-          <div class="flex-grow-1">
-            <div class="d-flex justify-content-end">
-              <div class="investigacion-experimento__wrap bg-white">
-                <div>
-                  <h4 class="mb-2 antetitle">Experimento</h4>
-                  <h3 class="title-3 color-blue-1 mb-3">Sebastian: el<br> asistente que controla al asistente</h3>
-                  <p class="color-blue-4">Para visibilizar la carencia de control que tenemos sobre los altavoces
-                    inteligentes, creamos a Sebastian, un
-                    interruptor on/off por voz para decidir, activamente, cuándo permitir o no la escucha.</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="investigacion-experimento__img">
-                  <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Media -->
-    </div>
-
-  </div>
-  <!-- Fin Explicabilidad IA -->
-
-  <!-- Toma de decisiones -->
-  <div id="toma-decisones" class="section bg-blue-1" data-scroll-section>
-    <div class="d-flex h-100v pl-7">
-
-      <!-- Paginador -->
-      <div class="ly-investigacion--1">
-        <div class="d-flex flex-row py-5 h-100 align-items-center">
-          <div class="text-sm color-blue-4 my-4"><span>01</span></div>
-          <div class="ab ml-3"></div>
-        </div>
-      </div>
-      <!-- Fin Paginador -->
-
-      <!-- Title + Image  -->
-      <div class="ly-investigacion--2">
-        <div class="d-flex h-100v">
-          <div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position"
-            data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
-            <h2 class="title-4 color-white">Toma de decisiones</h2>
-          </div>
-          <div
-            class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
-            <img src="/assets/images/sky.png" alt="Imagen Gibsom">
-            <p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
-              interpretando<br>
-              la
-              frase "The sky above the port was the color<br>
-              of television" de William Gibson.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Title + Image  -->
-
-      <!-- Media -->
-      <div class="ly-investigacion--3">
-        <div class="d-flex h-100v flex-column">
-
-          <div class="flex-grow-1">
-            <div class="investigacion-text__wrap p-4 ml-8 my-5">
-              <p class="color-white text-xl line-2xl">Exploramos cómo la tecnología nos (des)habilita para tomar decisiones a través de la recomendación, el perfilado, el scoring, la automatización y el diseño comportamental.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex-grow-1 order-first">
-            <div class="d-flex justify-content-end">
-              <div class="investigacion-experimento__wrap bg-white">
-                <div>
-                  <h4 class="mb-2 antetitle">Experimento</h4>
-                  <h3 class="title-3 color-blue-1 mb-3">El Patornalista <br> libertario</h3>
-                  <p class="color-blue-4">Conviértete en la persona que deberías ser, detectando cuándo tu conducta no es la adecuada y corrigiéndola de forma eficaz.</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="investigacion-experimento__img">
-                  <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Media -->
-    </div>
-
-  </div>
-  <!-- Fin Toma de decisiones -->
-
-  <!-- Belleza y arte -->
-  <div id="explicabilidad" class="section bg-blue-1" data-scroll-section>
-    <div class="d-flex h-100v">
-
-      <!-- Paginador -->
-      <div class="ly-investigacion--1">
-        {% include "@base/paginador/paginador.twig" %}
-      </div>
-      <!-- Fin Paginador -->
-
-      <!-- Title + Image  -->
-      <div class="ly-investigacion--2">
-        <div class="d-flex h-100v">
-          <div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position"
-            data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
-            <h2 class="title-4 color-white">Belleza y arte</h2>
-          </div>
-          <div
-            class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
-            <img src="/assets/images/sky.png" alt="Imagen Gibsom">
-            <p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
-              interpretando<br>
-              la
-              frase "The sky above the port was the color<br>
-              of television" de William Gibson.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Title + Image  -->
-
-      <!-- Media -->
-      <div class="ly-investigacion--3">
-        <div class="d-flex h-100v flex-column">
-          <div class="flex-grow-1">
-            <div class="investigacion-text__wrap p-4 ml-8 my-5">
-              <p class="color-white text-xl line-2xl">La intersección entre el diseño, el arte y la tecnología es uno de nuestros campos de investigación más experimentales y amplios, abarcando desde el arte generativo, hasta el diseño de nuevos modelos de interfaz o la exploración sobre las reacciones humanas en este contexto.
-              </p>
-            </div>
-          </div>
-          <div class="flex-grow-1">
-            <div class="d-flex justify-content-end">
-              <div class="investigacion-experimento__wrap bg-white">
-                <div>
-                  <h4 class="mb-2 antetitle">Experimento</h4>
-                  <h3 class="title-3 color-blue-1 mb-3">WaterColor<br> Melody Machine</h3>
-                  <p class="color-blue-4">Proceso creativo donde una IA improvisa al piano mientras pinta sobre un lienzo. La WCMM ha formado parte además de una investigación empírica para medir cómo reaccionan las personas ante el arte artificial.</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="investigacion-experimento__img">
-                  <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Media -->
-    </div>
-
-  </div>
-  <!-- Fin Belleza y arte -->
-
-  <!-- Conducta IA -->
-  <div id="explicabilidad" class="section bg-blue-1" data-scroll-section>
-    <div class="d-flex h-100v">
-
-      <!-- Paginador -->
-      <div class="ly-investigacion--1">
-        {% include "@base/paginador/paginador.twig" %}
-      </div>
-      <!-- Fin Paginador -->
-
-      <!-- Title + Image  -->
-      <div class="ly-investigacion--2">
-        <div class="d-flex h-100v">
-          <div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position"
-            data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
-            <h2 class="title-4 color-white">Conducta IA</h2>
-          </div>
-          <div
-            class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
-            <img src="/assets/images/sky.png" alt="Imagen Gibsom">
-            <p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
-              interpretando<br>
-              la
-              frase "The sky above the port was the color<br>
-              of television" de William Gibson.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Title + Image  -->
-
-      <!-- Media -->
-      <div class="ly-investigacion--3">
-        <div class="d-flex h-100v flex-column">
-          <div class="flex-grow-1">
-            <div class="investigacion-text__wrap p-4 ml-8 my-5">
-              <p class="color-white text-xl line-2xl">Realizamos experimentos conductuales para comprender cómo funcionan realmente las inteligencias artificiales con modelos opacos / cajas negras y asegurarnos que sus recomendaciones y decisiones no sufren sesgo.
-              </p>
-            </div>
-          </div>
-          <div class="flex-grow-1">
-            <div class="d-flex justify-content-end">
-              <div class="investigacion-experimento__wrap bg-white">
-                <div>
-                  <h4 class="mb-2 antetitle">Experimento</h4>
-                  <h3 class="title-3 color-blue-1 mb-3">Sesgos en la IA <br> de reconocimiento de imágenes</h3>
-                  <p class="color-blue-4">Si eres mujer, la tecnología no identificará un taladro en tu mano. O confundirá tu martillo con un secador. Pero no ocurrirá así si eres un hombre. Una prueba de sexismo en la IA..</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="investigacion-experimento__img">
-                  <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Media -->
-    </div>
-
-  </div>
-  <!-- Conducta IA -->
-
-  <!-- Futuros -->
-  <div id="explicabilidad" class="section bg-blue-1" data-scroll-section>
-    <div class="d-flex h-100v">
-
-      <!-- Paginador -->
-      <div class="ly-investigacion--1">
-        {% include "@base/paginador/paginador.twig" %}
-      </div>
-      <!-- Fin Paginador -->
-
-      <!-- Title + Image  -->
-      <div class="ly-investigacion--2">
-        <div class="d-flex h-100v">
-          <div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position"
-            data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
-            <h2 class="title-4 color-white">Futuros</h2>
-          </div>
-          <div
-            class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
-            <img src="/assets/images/sky.png" alt="Imagen Gibsom">
-            <p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
-              interpretando<br>
-              la
-              frase "The sky above the port was the color<br>
-              of television" de William Gibson.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Title + Image  -->
-
-      <!-- Media -->
-      <div class="ly-investigacion--3">
-        <div class="d-flex h-100v flex-column">
-          <div class="flex-grow-1">
-            <div class="investigacion-text__wrap p-4 ml-8 my-5">
-              <p class="color-white text-xl line-2xl">Con una mirada en el presente y otra en lo que está por llegar, ahondamos en el impacto futuro que la tecnología tendrá en nuestro modo de vida y cómo nuestros miedos, anhelos y preocupaciones de hoy impregnan la forma en que moldeamos el mañana.
-              </p>
-            </div>
-          </div>
-          <div class="flex-grow-1">
-            <div class="d-flex justify-content-end">
-              <div class="investigacion-experimento__wrap bg-white">
-                <div>
-                  <h4 class="mb-2 antetitle">Experimento</h4>
-                  <h3 class="title-3 color-blue-1 mb-3">Sinsi</h3>
-                  <p class="color-blue-4">¿Buscas respuestas sobre el futuro? Si te atreves a conocer cómo será, puedo guiarte para ello. Eso sí. Te advierto que los humanos tendéis a reproducir aquellos futuros que imagináis.</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="investigacion-experimento__img">
-                  <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Fin Media -->
-    </div>
-
-  </div>
-  <!-- Futuros -->
+			</div>
+		</div>
+		<!-- Intro -->
+		<div id="cv" class="section bg-blue-1" data-scroll-section>
+			<div class="d-flex h-100v">
+				<div id="canvas" class="fluid"></div>
+			</div>
+		</div>
 
 
+		<!-- Explicabilidad IA -->
+		<div id="explicabilidad" class="section bg-blue-1" data-scroll-section>
+			<div
+				class="d-flex h-100v">
 
-  <div class="section bg-blue-1 Xdev" data-scroll-section>
+				<!-- Paginador -->
+				<div class="ly-investigacion--1">
+					{% include "@base/paginador/paginador.twig" %}
+				</div>
+				<!-- Fin Paginador -->
 
-    <div class="d-flex">
+				<!-- Title + Image  -->
+				<div class="ly-investigacion--2">
+					<div class="d-flex h-100v">
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position" data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
+							<h2 class="title-4 color-white">Explicabilidad IA</h2>
+						</div>
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
+							<img src="/assets/images/sky.png" alt="Imagen Gibsom">
+							<p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
+																																																								              interpretando<br>
+								la
+																																																								              frase "The sky above the port was the color<br>
+								of television" de William Gibson.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Title + Image  -->
+
+				<!-- Media -->
+				<div class="ly-investigacion--3">
+					<div class="d-flex h-100v flex-column">
+						<div class="flex-grow-1">
+							<div class="investigacion-text__wrap p-4 ml-8 my-5">
+								<p class="color-white text-xl line-2xl">La transparencia y la interpretabilidad son temas
+																																																															                que van a marcar la agenda del desarrollo tecnológico en los próximos
+																																																															                años. Investigamos cómo hacer entendibles las inteligencias artificiales y qué impacto
+																																																															                tienen sus explicaciones en los
+																																																															                tomadores de decisiones.
+								</p>
+							</div>
+						</div>
+						<div class="flex-grow-1">
+							<div class="d-flex justify-content-end">
+								<div class="investigacion-experimento__wrap bg-white">
+									<div>
+										<h4 class="mb-2 antetitle">Experimento</h4>
+										<h3 class="title-3 color-blue-1 mb-3">Sebastian: el<br>
+											asistente que controla al asistente</h3>
+										<p class="color-blue-4">Para visibilizar la carencia de control que tenemos sobre los altavoces
+																																																																													                    inteligentes, creamos a Sebastian, un
+																																																																													                    interruptor on/off por voz para decidir, activamente, cuándo permitir o no la escucha.</p>
+									</div>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="investigacion-experimento__img">
+										<img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Media -->
+			</div>
+
+		</div>
+		<!-- Fin Explicabilidad IA -->
+
+		<!-- Toma de decisiones -->
+		<div id="toma-decisones" class="section bg-blue-1" data-scroll-section>
+			<div
+				class="d-flex h-100v pl-7">
+
+				<!-- Paginador -->
+				<div class="ly-investigacion--1">
+					<div class="d-flex flex-row py-5 h-100 align-items-center">
+						<div class="text-sm color-blue-4 my-4">
+							<span>01</span>
+						</div>
+						<div class="ab ml-3"></div>
+					</div>
+				</div>
+				<!-- Fin Paginador -->
+
+				<!-- Title + Image  -->
+				<div class="ly-investigacion--2">
+					<div class="d-flex h-100v">
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position" data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
+							<h2 class="title-4 color-white">Toma de decisiones</h2>
+						</div>
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
+							<img src="/assets/images/tele_colgada_v.jpg" alt="Imagen Gibsom">
+							<p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
+																																																								              interpretando<br>
+								la
+																																																								              frase "The sky above the port was the color<br>
+								of television" de William Gibson.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Title + Image  -->
+
+				<!-- Media -->
+				<div class="ly-investigacion--3">
+					<div class="d-flex h-100v flex-column">
+
+						<div class="flex-grow-1">
+							<div class="investigacion-text__wrap p-4 ml-8 my-5">
+								<p class="color-white text-xl line-2xl">Exploramos cómo la tecnología nos (des)habilita para tomar decisiones a través de la recomendación, el perfilado, el scoring, la automatización y el diseño comportamental.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex-grow-1 order-first">
+							<div class="d-flex justify-content-end">
+								<div class="investigacion-experimento__wrap bg-white">
+									<div>
+										<h4 class="mb-2 antetitle">Experimento</h4>
+										<h3 class="title-3 color-blue-1 mb-3">El Patornalista
+											<br>
+											libertario</h3>
+										<p class="color-blue-4">Conviértete en la persona que deberías ser, detectando cuándo tu conducta no es la adecuada y corrigiéndola de forma eficaz.</p>
+									</div>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="investigacion-experimento__img">
+										<img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Media -->
+			</div>
+
+		</div>
+		<!-- Fin Toma de decisiones -->
+
+		<!-- Belleza y arte -->
+		<div id="explicabilidad" class="section bg-blue-1" data-scroll-section>
+			<div
+				class="d-flex h-100v">
+
+				<!-- Paginador -->
+				<div class="ly-investigacion--1">
+					{% include "@base/paginador/paginador.twig" %}
+				</div>
+				<!-- Fin Paginador -->
+
+				<!-- Title + Image  -->
+				<div class="ly-investigacion--2">
+					<div class="d-flex h-100v">
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position" data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
+							<h2 class="title-4 color-white">Belleza y arte</h2>
+						</div>
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
+							<img src="/assets/images/tele_morada.jpg" alt="Imagen Gibsom">
+							<p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
+																																																								              interpretando<br>
+								la
+																																																								              frase "The sky above the port was the color<br>
+								of television" de William Gibson.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Title + Image  -->
+
+				<!-- Media -->
+				<div class="ly-investigacion--3">
+					<div class="d-flex h-100v flex-column">
+						<div class="flex-grow-1">
+							<div class="investigacion-text__wrap p-4 ml-8 my-5">
+								<p class="color-white text-xl line-2xl">La intersección entre el diseño, el arte y la tecnología es uno de nuestros campos de investigación más experimentales y amplios, abarcando desde el arte generativo, hasta el diseño de nuevos modelos de interfaz o la exploración sobre las reacciones humanas en este contexto.
+								</p>
+							</div>
+						</div>
+						<div class="flex-grow-1">
+							<div class="d-flex justify-content-end">
+								<div class="investigacion-experimento__wrap bg-white">
+									<div>
+										<h4 class="mb-2 antetitle">Experimento</h4>
+										<h3 class="title-3 color-blue-1 mb-3">WaterColor<br>
+											Melody Machine</h3>
+										<p class="color-blue-4">Proceso creativo donde una IA improvisa al piano mientras pinta sobre un lienzo. La WCMM ha formado parte además de una investigación empírica para medir cómo reaccionan las personas ante el arte artificial.</p>
+									</div>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="investigacion-experimento__img">
+										<img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Media -->
+			</div>
+
+		</div>
+		<!-- Fin Belleza y arte -->
+
+		<!-- Conducta IA -->
+		<div id="explicabilidad" class="section bg-blue-1" data-scroll-section>
+			<div
+				class="d-flex h-100v">
+
+				<!-- Paginador -->
+				<div class="ly-investigacion--1">
+					{% include "@base/paginador/paginador.twig" %}
+				</div>
+				<!-- Fin Paginador -->
+
+				<!-- Title + Image  -->
+				<div class="ly-investigacion--2">
+					<div class="d-flex h-100v">
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position" data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
+							<h2 class="title-4 color-white">Conducta IA</h2>
+						</div>
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
+							<img src="/assets/images/tele_cielo_v.jpg" alt="Imagen Gibsom">
+							<p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
+																																																								              interpretando<br>
+								la
+																																																								              frase "The sky above the port was the color<br>
+								of television" de William Gibson.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Title + Image  -->
+
+				<!-- Media -->
+				<div class="ly-investigacion--3">
+					<div class="d-flex h-100v flex-column">
+						<div class="flex-grow-1">
+							<div class="investigacion-text__wrap p-4 ml-8 my-5">
+								<p class="color-white text-xl line-2xl">Realizamos experimentos conductuales para comprender cómo funcionan realmente las inteligencias artificiales con modelos opacos / cajas negras y asegurarnos que sus recomendaciones y decisiones no sufren sesgo.
+								</p>
+							</div>
+						</div>
+						<div class="flex-grow-1">
+							<div class="d-flex justify-content-end">
+								<div class="investigacion-experimento__wrap bg-white">
+									<div>
+										<h4 class="mb-2 antetitle">Experimento</h4>
+										<h3 class="title-3 color-blue-1 mb-3">Sesgos en la IA
+											<br>
+											de reconocimiento de imágenes</h3>
+										<p class="color-blue-4">Si eres mujer, la tecnología no identificará un taladro en tu mano. O confundirá tu martillo con un secador. Pero no ocurrirá así si eres un hombre. Una prueba de sexismo en la IA..</p>
+									</div>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="investigacion-experimento__img">
+										<img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Media -->
+			</div>
+
+		</div>
+		<!-- Conducta IA -->
+
+		<!-- Futuros -->
+		<div id="explicabilidad" class="section bg-blue-1" data-scroll-section>
+			<div
+				class="d-flex h-100v">
+
+				<!-- Paginador -->
+				<div class="ly-investigacion--1">
+					{% include "@base/paginador/paginador.twig" %}
+				</div>
+				<!-- Fin Paginador -->
+
+				<!-- Title + Image  -->
+				<div class="ly-investigacion--2">
+					<div class="d-flex h-100v">
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-title__position" data-scroll data-scroll-speed="1" data-scroll-direction="vertical">
+							<h2 class="title-4 color-white">Futuros</h2>
+						</div>
+						<div class="d-flex flex-column align-items-center justify-content-center investigacion-img__position text-right">
+							<img src="/assets/images/tele_verde.jpg" alt="Imagen Gibsom">
+							<p class="color-blue-7 text-sm pt-4">Imagen generada por media de una inteligencia artificial,
+																																																								              interpretando<br>
+								la
+																																																								              frase "The sky above the port was the color<br>
+								of television" de William Gibson.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Title + Image  -->
+
+				<!-- Media -->
+				<div class="ly-investigacion--3">
+					<div class="d-flex h-100v flex-column">
+						<div class="flex-grow-1">
+							<div class="investigacion-text__wrap p-4 ml-8 my-5">
+								<p class="color-white text-xl line-2xl">Con una mirada en el presente y otra en lo que está por llegar, ahondamos en el impacto futuro que la tecnología tendrá en nuestro modo de vida y cómo nuestros miedos, anhelos y preocupaciones de hoy impregnan la forma en que moldeamos el mañana.
+								</p>
+							</div>
+						</div>
+						<div class="flex-grow-1">
+							<div class="d-flex justify-content-end">
+								<div class="investigacion-experimento__wrap bg-white">
+									<div>
+										<h4 class="mb-2 antetitle">Experimento</h4>
+										<h3 class="title-3 color-blue-1 mb-3">Sinsi</h3>
+										<p class="color-blue-4">¿Buscas respuestas sobre el futuro? Si te atreves a conocer cómo será, puedo guiarte para ello. Eso sí. Te advierto que los humanos tendéis a reproducir aquellos futuros que imagináis.</p>
+									</div>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="investigacion-experimento__img">
+										<img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Media -->
+			</div>
+
+		</div>
+		<!-- Futuros -->
 
 
-      {# Paginador #}
-      <!-- Paginador -->
-      <div class="ly-investigacion--1">
-        <div class="d-flex flex-row py-5 h-100 align-items-center">
-          <div class="text-sm color-blue-4 my-4"><span>02</span></div>
-          <div class="ab ml-3"></div>
-        </div>
-      </div>
-      <!-- Fin Paginador -->
-      {# Fin Paginador #}
+		<div class="section bg-blue-1 Xdev" data-scroll-section>
+
+			<div class="d-flex">
 
 
-      {# Title vertical #}
-      <div class="l2">
-        {% include "@base/title-vertical/title-vertical.twig" %}
-      </div>
-      {# Fin Title vertical #}
+				{# Paginador #}
+				<!-- Paginador -->
+					<div class="ly-investigacion--1"> <div class="d-flex flex-row py-5 h-100 align-items-center">
+						<div class="text-sm color-blue-4 my-4">
+							<span>02</span>
+						</div>
+						<div class="ab ml-3"></div>
+					</div>
+				</div>
+				<!-- Fin Paginador -->
+				{# Fin Paginador #}
 
 
-      {# Contenido #}
-      <div class="l3 p-4">
-        <div class="d-flex">
-          <div class="d-flex flex-column justify-content-center">
-            <img src="/assets/images/sky.png" alt="Imagen del asistente Sebastian">
-          </div>
-          <div class="d-flex flex-column justify-content-center">
-            <div class="descripcion-ficha">
-              <p class="color-white text-xl line-2xl">La transparencia y la interpretabilidad son temas
-                que van a marcar la agenda del desarrollo tecnológico en los próximos
-                años. Investigamos cómo hacer entendibles las inteligencias artificiales y qué impacto
-                tienen sus explicaciones en los
-                tomadores de decisiones.
-              </p>
-            </div>
-
-          </div>
-        </div>
-        <div>
-
-        </div>
+				{# Title vertical #}
+					<div class="l2"> {% include "@base/title-vertical/title-vertical.twig" %}
+				</div>
+				{# Fin Title vertical #}
 
 
+				{# Contenido #}
+				<div class="l3 p-4">
+					<div class="d-flex">
+						<div class="d-flex flex-column justify-content-center">
+							<img src="/assets/images/tele_torre.jpg" alt="Imagen del asistente Sebastian">
+						</div>
+						<div class="d-flex flex-column justify-content-center">
+							<div class="descripcion-ficha">
+								<p class="color-white text-xl line-2xl">La transparencia y la interpretabilidad son temas
+																																																															                que van a marcar la agenda del desarrollo tecnológico en los próximos
+																																																															                años. Investigamos cómo hacer entendibles las inteligencias artificiales y qué impacto
+																																																															                tienen sus explicaciones en los
+																																																															                tomadores de decisiones.
+								</p>
+							</div>
 
-      </div>
-      {# Fin Contenido #}
-
-      {# Media #}
-      <div class="l4 bg-white">
-        <div class="py-3 px-7 d-flex flex-column justify-content-between h-100">
-          <div class="pt-4">
-            <h4 class="mb-2 antetitle">Experimento</h4>
-            <h3 class="title-3 color-blue-1">Sebastian: el asistente que controla al asistente</h3>
-            <p class="color-blue-4">Para visibilizar la carencia de control que tenemos sobre los altavoces
-              inteligentes, creamos a Sebastian, un
-              interruptor on/off por voz para decidir, activamente, cuándo permitir o no la escucha.</p>
-          </div>
-
-
-          <div>
-            <img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
-          </div>
-        </div>
-      </div>
-      {# Fin Media #}
-    </div>
-  </div>
+						</div>
+					</div>
+					<div></div>
 
 
-  <div id="magic" class="section bg-blue-1" data-scroll-section>
-    <p data-scroll class="text-4xl font-700 p-5 color-white">BBBBBB Loren ipsum</p>
+				</div>
+				{# Fin Contenido #}
 
-    <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="8" style="margin-left: 20vw;"
-      class="text-base font-200 p-5 color-white">Imagen generada por media de una inteligencia artificial,
-      <br>interpretando la frase "The sky above the port was the color
-      of television" de William Gibson.
-    </p>
+				{# Media #}
+				<div class="l4 bg-white">
+					<div class="py-3 px-7 d-flex flex-column justify-content-between h-100">
+						<div class="pt-4">
+							<h4 class="mb-2 antetitle">Experimento</h4>
+							<h3 class="title-3 color-blue-1">Sebastian: el asistente que controla al asistente</h3>
+							<p class="color-blue-4">Para visibilizar la carencia de control que tenemos sobre los altavoces
+																																																								              inteligentes, creamos a Sebastian, un
+																																																								              interruptor on/off por voz para decidir, activamente, cuándo permitir o no la escucha.</p>
+						</div>
 
-  </div>
 
-  <div name="curso" class="section bg-pink-1" data-scroll-section>
-    <div>
-      <h2 class="text-2xl font-700" data-scroll data-scroll-speed="1">Imagen generada por media</h2>
-      <div class="rotate">
-        <p class="text-4xl" data-scroll data-scroll-speed="3">William Gibson.</p>
-      </div>
+						<div>
+							<img src="/assets/images/sebastian.jpg" alt="Imagen del asistente Sebastian">
+						</div>
+					</div>
+				</div>
+				{# Fin Media #}
+			</div>
+		</div>
 
-    </div>
-  </div>
 
-  <div class="section bg-blue-1" data-scroll-section>
-    {# Title vertical outline #}
-    <div class="titlewrap d-flex flex-column justify-content-end">
-      <div class="titlewrap-rotate">
-        <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" class="title-outline p-5">
-          Nuestro proceso</h2>
-      </div>
-    </div>
-    {# Fin Title vertical outline #}
-  </div>
+		<div id="magic" class="section bg-blue-1" data-scroll-section>
+			<p data-scroll class="text-4xl font-700 p-5 color-white">BBBBBB Loren ipsum</p>
 
-</div>
+			<p data-scroll data-scroll-direction="horizontal" data-scroll-speed="8" style="margin-left: 20vw;" class="text-base font-200 p-5 color-white">Imagen generada por media de una inteligencia artificial,
+				<br>interpretando la frase "The sky above the port was the color
+																												      of television" de William Gibson.
+			</p>
 
+		</div>
+
+		<div name="curso" class="section bg-pink-1" data-scroll-section>
+			<div>
+				<h2 class="text-2xl font-700" data-scroll data-scroll-speed="1">Imagen generada por media</h2>
+				<div class="rotate">
+					<p class="text-4xl" data-scroll data-scroll-speed="3">William Gibson.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div
+			class="section bg-blue-1" data-scroll-section>
+			{# Title vertical outline #}
+			<div class="titlewrap d-flex flex-column justify-content-end">
+				<div class="titlewrap-rotate">
+					<h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" class="title-outline p-5">
+						Nuestro proceso</h2>
+				</div>
+			</div>
+			{# Fin Title vertical outline #}
+		</div>
+
+	</div>
 
 
 {% endblock %}
