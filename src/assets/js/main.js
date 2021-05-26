@@ -175,7 +175,7 @@
       mouseDistance = mouseDistance / 12500; // Scale it down
       console.log(mouseDistance);
       if (mouseDistance > 0.5) {
-        mouseDistance = 0.2;
+        mouseDistance = 0.18;
       } else {
         mouseDistance;
       }
