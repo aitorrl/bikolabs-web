@@ -173,7 +173,12 @@
       mouseDistance = center.dist(mouseVector);
 
       mouseDistance = mouseDistance / 12500; // Scale it down
-
+      console.log(mouseDistance);
+      if (mouseDistance > 0.5) {
+        mouseDistance = 0.2;
+      } else {
+        mouseDistance;
+      }
       for (let i = 0; i < circleAmount; ++i) {
         let q = (i % 2) * p.PI;
         let radius = 100 + i * 60;
@@ -197,7 +202,7 @@
       return a;
     }
   };
-  new p5(sketch, "invest");
+  //new p5(sketch, "invest");
   new p5(sketch, "invest2");
 })();
 
