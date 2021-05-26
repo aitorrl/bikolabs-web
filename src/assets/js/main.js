@@ -202,7 +202,7 @@
       return a;
     }
   };
-  //new p5(sketch, "invest");
+  new p5(sketch, "invest");
   new p5(sketch, "invest2");
 })();
 
