@@ -27,11 +27,6 @@
     width: 1400px;
 }
 
-.aaaa {
-    padding: 10px;
-    background-color: yellowgreen;
-}
-
 .img-zoom {
     margin: 0;
     display: block;
@@ -45,6 +40,29 @@
 
 .img-zoom-active {
     transform: scale(1.1);
+}
 
-    // opacity: 0.8;
+.seccion-curso__text {
+    width: 570px;
+}
+
+.seccion-curso__textright {
+    width: 575px;
+}
+
+.ly-seccion-curso-1 {
+    width: 815px;
+}
+
+.ly-seccion-curso-2 {
+    width: 715px;
+    overflow: hidden;
+}
+
+.ly-seccion-curso-3 {
+    width: 880px;
+}
+
+.form-wrap {
+    width: 575px;
 }
