@@ -1,0 +1,116 @@
+{# ----- HOME ----- #}
+{% extends "layouts::/page.twig" %}
+{% block page %}
+
+{# Menu #}
+{% include "@base/menu/menu.twig" %}
+
+<div class="bg-white" data-scroll-container>
+
+	<!-- Intro -->
+	<div class="section bg-white ml-8" data-scroll-section>
+
+		<div class="d-flex h-100v">
+
+			<div class="ly-seccion-curso-1 d-flex flex-column justify-content-center align-items-center">
+
+				<div class="text-wrap seccion-curso__text">
+					<h2 class="title-5 color-blue-1 mb-5 line-6xl">
+						Forms
+					</h2>
+					<p class="color-blue-1 mb-6 text-2xl">Ideas erróneas sobre nuestra percepción del mundo y cómo la
+						tecnología
+						nos (des)habilita para tomar decisiones en él</p>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Intro -->
+
+	<!-- Form Contribuir -->
+	<div class="section bg-white pl-7" data-scroll-section>
+		<div class="d-flex h-100v">
+
+			<div class="ly-investigacion--1">
+				<div class="d-flex flex-row py-5 h-100 align-items-center">
+					<div class="text-sm color-blue-4 my-4">
+						<span>01</span>
+					</div>
+					<div class="ab ml-3"></div>
+				</div>
+			</div>
+
+			<div class="ly-investigacion--2">
+				<div class="d-flex h-100v form-wrap">
+
+					<!-- Form -->
+					{% include "@base/forms/contribuir.twig" %}
+					<!-- Fin Form -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin Contribuir -->
+
+	<!-- Form Curso -->
+	<div class="section bg-white pl-7" data-scroll-section>
+		<div class="d-flex h-100v">
+
+			<div class="ly-investigacion--1">
+				<div class="d-flex flex-row py-5 h-100 align-items-center">
+					<div class="text-sm color-blue-4 my-4">
+						<span>01</span>
+					</div>
+					<div class="ab ml-3"></div>
+				</div>
+			</div>
+
+			<div class="ly-investigacion--2">
+				<div class="d-flex h-100v form-wrap">
+
+					<!-- Form -->
+					{% include "@base/forms/curso.twig" %}
+					<!-- Fin Form -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin Curso -->
+
+	<!-- Form contacto -->
+	<div class="section bg-white pl-7" data-scroll-section>
+		<div class="d-flex h-100v">
+
+			<div class="ly-investigacion--1">
+				<div class="d-flex flex-row py-5 h-100 align-items-center">
+					<div class="text-sm color-blue-4 my-4">
+						<span>01</span>
+					</div>
+					<div class="ab ml-3"></div>
+				</div>
+			</div>
+
+			<div class="ly-investigacion--2">
+				<div class="d-flex h-100v form-wrap">
+
+					<!-- Form -->
+					{% include "@base/forms/contacto.twig" %}
+					<!-- Fin Form -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Fin Form contacto -->
+
+
+
+
+
+
+</div>
+{% endblock %}
