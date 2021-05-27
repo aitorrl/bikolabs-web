@@ -2,3 +2,10 @@ p {
     margin-bottom: 1rem;
     font-size: inherit;
 }
+
+.list-arrow {
+    li {
+        list-style-image: url("/assets/images/listarrow.svg");
+        list-style-position: inside;
+    }
+}
