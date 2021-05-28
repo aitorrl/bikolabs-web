@@ -3,9 +3,23 @@ p {
     font-size: inherit;
 }
 
-.list-arrow {
+ul.list-arrow {
+    margin: 0;
+    padding-left: 10px;
+
     li {
-        list-style-image: url("/assets/images/listarrow.svg");
-        list-style-position: inside;
+        position: relative;
+        list-style-type: none;
+        padding-left: 16px;
+    }
+
+    li:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -16px;
+        width: 24px;
+        height: 24px;
+        background-image: url("/assets/images/listarrow.svg");
     }
 }
