@@ -1,5 +1,5 @@
 $select-img: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.3091 16.3241L20.1619 8.4713L19.4747 7.78418L12.3091 14.9498L5.14346 7.78418L4.45635 8.4713L12.3091 16.3241Z' fill='%23003264'/%3E%3Cpath d='M4.35815 8.47133L5.24159 7.58789L5.33975 7.68605L12.3091 14.7535L19.4747 7.58789L20.3582 8.47133L12.3091 16.4222L12.2109 16.4222L4.35815 8.47133ZM5.14343 7.88237L4.55447 8.47133L12.3091 16.2259L20.0637 8.47133L19.4747 7.88237L12.3091 15.048L12.2109 14.9499L5.14343 7.88237Z' fill='%23003264'/%3E%3C/svg%3E%0A");
-$form-primary: $color-blue-6;
+$form-primary: $color-blue-5;
 $form-active: $color-pink-1;
 $form-error: red;
 
@@ -14,10 +14,18 @@ $form-error: red;
     }
 
     input, select {
-        height: 48px;
-        border-radius: 6px;
+        height: 55px;
         border-color: $form-primary;
-        border: 2px solid $form-primary;
+        border: 1px solid $form-primary;
+        width: 100%;
+        padding: 0px 10px;
+
+        &:focus-visible {
+            outline-color: $form-active;
+            transition: all 0.5s;
+            border-radius: 0px;
+            border: 1px solid;
+        }
     }
 
     input.error {
@@ -48,32 +56,41 @@ $form-error: red;
     }
 
     textarea {
-        border-radius: 6px;
         border-color: $form-primary;
         width: 100%;
         padding: 10px;
-        border: 2px solid $form-primary;
+        border: 1px solid $form-primary;
+
+        &:focus-visible {
+            outline-color: $form-active;
+            transition: all 0.5s;
+            border-radius: 0px;
+            border: 1px solid;
+        }
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+        transition: all 0.5s;
+    }
+
+    input:focus::input-placeholder {
+        color: transparent;
+        transition: all 0.5s;
     }
 
     input[type="checkbox"] {
         width: 16px;
         height: 16px;
-        border-radius: 3px;
+        border-radius: 0px;
         border: 1px solid $form-primary;
         appearance: none;
         background-color: white;
     }
 
-    input[type="checkbox"]:checked {
-        background-color: $form-active;
-    }
-
-    input[type=submit] {
-        // @extend a.button-primary;
-
-        border: 2px solid transparent;
-        padding: 1rem 8rem;
-    }
+    // input[type="checkbox"]:checked {
+    //     background-color: $form-active;
+    // }
 
     .form-control:focus {
         color: #495057;
@@ -113,71 +130,15 @@ $form-error: red;
     }
 
     label.error {
-        // @extend .text-xs;
-
         @extend .pt-1;
 
         color: $form-error;
         text-transform: none;
     }
 
-    .form-row {
-        @extend .mb-lg-4;
-
-        @extend .mb-1;
-
-        > .col,
-        > [class*="col-"] {
-            padding-right: $form-grid-gutter-width / 1;
-            padding-left: $form-grid-gutter-width / 1;
-
-            @extend .mb-3;
-
-            @extend .mb-lg-0;
-        }
+    input[type=submit] {
+        border: 2px solid transparent;
     }
-}
-
-.form-search {
-    display: flex;
-    width: 100%;
-
-    .form-item {
-        width: 100%;
-    }
-
-    label {
-        visibility: hidden;
-        position: absolute;
-        left: -111111111111;
-    }
-
-    input[type="image"] {
-        height: 48px;
-        border-radius: 0px 6px 6px 0px;
-        border-color: $form-primary;
-        border-top: 2px solid $blue;
-        border-right: 2px solid $blue;
-        border-bottom: 2px solid $blue;
-        background-color: $blue;
-        border-left: transparent !important;
-        padding: 10px;
-    }
-
-    input.form-text {
-        border-radius: 6px 0px 0px 6px;
-        border-top: 2px solid $form-primary;
-        border-right: transparent;
-        border-bottom: 2px solid $form-primary;
-        border-left: 2px solid $form-primary;
-        width: 100%;
-        padding-left: 10px;
-    }
-}
-
-.form-block__position {
-    position: relative;
-    top: -50px;
 }
 
 .form-check input[type="checkbox"] {
@@ -202,8 +163,6 @@ $form-error: red;
     user-select: none;
     cursor: pointer;
     padding-left: 0em;
-
-    // line-height: $line-size-2xl;
     color: black;
 }
 
@@ -216,7 +175,7 @@ $form-error: red;
     top: 1px;
     width: 16px;
     height: 16px;
-    border-radius: 4px;
+    border-radius: 0px;
     border: 1px solid $form-primary !important;
     transition: all 0.4s ease;
     background-color: $white;
@@ -248,7 +207,7 @@ $form-error: red;
 
 .form-check input[type="checkbox"]:checked + label:before {
     animation: borderscale 200ms ease-in;
-    background: $blue;
+    background: $color-pink-1;
 }
 
 .form-check input[type="checkbox"]:checked + label:after {
@@ -257,7 +216,7 @@ $form-error: red;
 
 @keyframes borderscale {
     50% {
-        box-shadow: 0 0 0 2px $blue;
+        box-shadow: 0 0 0 2px $color-pink-2;
     }
 }
 
@@ -267,4 +226,8 @@ $form-error: red;
 
 .w-50 {
     width: 50%;
+}
+
+.ly-form-curso  {
+    width: 575px;
 }

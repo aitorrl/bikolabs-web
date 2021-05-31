@@ -2,282 +2,265 @@
 {% extends "layouts::/page.twig" %}
 {% block page %}
 
-	{# Menu #}
-	{% include "@base/menu/menu.twig" %}
 
-	<div
-		class="bg-white" data-scroll-container>
+{# Menu #}
+{% include "@base/menu/menu.twig" %}
 
-		<!-- Intro -->
-		<div class="section bg-white ml-8" data-scroll-section>
+<div class="bg-white" data-scroll-container>
 
-			<div class="d-flex h-100v">
+	<!-- Intro -->
+	<div class="section bg-white ml-8" data-scroll-section>
 
-				<div class="ly-seccion-curso-1 d-flex flex-column justify-content-center align-items-center">
+		<div class="d-flex h-100v">
 
-					<div class="text-wrap seccion-curso__text">
-						<h2 class="title-5 color-blue-1 mb-5 line-6xl">
-							Intervenir en la tecnología que diseña nuestro comportamiento
-						</h2>
-						<p class="color-blue-1 mb-6 text-2xl">Ideas erróneas sobre nuestra percepción del mundo y cómo la
-																											tecnología
-																											nos (des)habilita para tomar decisiones en él</p>
-						<div class="d-flex w-100 justify-content-between">
-							<div class="d-flex">
-								<div class="icon-medium pr-4 pt-2">
-									{{ svgSprite('calendar') }}
-								</div>
-								<div>
-									<p class="color-blue-1 font-700 title-3">29-30</p>
-									<p class="color-blue-1 font-700 text-xl mb-0">Junio 2021</p>
-									<p class="mb-2 text-base color-blue-5">de 15:00 a 1830</p>
-								</div>
+			<div class="ly-seccion-curso-1 d-flex flex-column justify-content-center align-items-center">
+
+				<div class="text-wrap seccion-curso__text">
+					<h2 class="title-5 color-blue-1 mb-5 line-6xl">
+						Intervenir en la tecnología que diseña nuestro comportamiento
+					</h2>
+					<p class="color-blue-1 mb-6 text-2xl">Ideas erróneas sobre nuestra percepción del mundo y cómo la
+						tecnología
+						nos (des)habilita para tomar decisiones en él</p>
+					<div class="d-flex w-100 justify-content-between">
+						<div class="d-flex">
+							<div class="icon-medium pr-4 pt-2">
+								{{ svgSprite('calendar') }}
 							</div>
-							<div class="flex-grow-1 pl-5">
-								<div class="pt-4 icon-mini pr-5">
-									<a href="" class="decoration-none mb-3 btn-secondary d-flex justify-content-between aaaaa" data-scroll="" data-scroll-class="aaaaa">Reservar
-																																							plaza
-										<div class="pl-3">
-											<svg>
-												<use xlink:href="/assets/svg/sprite/sprite.svg#arrow"></use>
-											</svg>
-										</div>
-									</a>
-								</div>
+							<div>
+								<p class="color-blue-1 font-700 title-3">29-30</p>
+								<p class="color-blue-1 font-700 text-xl mb-0">Junio 2021</p>
+								<p class="mb-2 text-base color-blue-5">de 15:00 a 1830</p>
+							</div>
+						</div>
+						<div class="flex-grow-1 pl-5">
+							<div class="pt-4 icon-mini pr-5">
+								<a href=""
+									class="decoration-none mb-3 btn-secondary d-flex justify-content-between aaaaa"
+									data-scroll="" data-scroll-class="#reserva-plaza">Reservar
+									plaza
+									<div class="pl-3">
+										<svg>
+											<use xlink:href="/assets/svg/sprite/sprite.svg#arrow"></use>
+										</svg>
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
-				</div>
-
-
-				<div class="ly-seccion-curso-2 h100v d-flex justify-content-center align-items-center">
-					<div>
-						<img src="/assets/images/sky.png" alt="Imagen">
-					</div>
-				</div>
-
-				<div class="ly-seccion-curso-3 h100v d-flex flex-column justify-content-end align-items-center">
-					<div class="seccion-curso__textright text-wrap text-xl color-blue-1 mb-8 pb-3">
-						<p>En los últimos años la ciencia del comportamiento ha aterrizado en los productos tecnológicos
-																											para empujar a través de
-																											“nudges digitales” nuestras acciones y (des)habilitar nuestra capacidad de toma de decisiones.
-						</p>
-						<p>Compartimos en este curso intensivo nuestras experiencias de intervención, además de una base
-																											profunda sobre los
-																											mecanismos psicológicos que sustentan la ciencia del cambio comportamental, los “nudges
-																											digitales” y cuál está siendo su
-																											aplicación práctica en tecnología.</p>
-					</div>
-					<div class=" seccion-curso__textright text-wrap mb-6">
-						<p class="text-sm color-blue-6">Este curso intensivo es parte de la etapa Difusión de
-																											nuestro proceso de trabajo. Su objetivo es compartir nuestros aprendizajes en la línea de
-																											investigación “Toma de
-																											decisiones”.</p>
-					</div>
-				</div>
-				<div class="ly-seccion-curso-4 h100v d-flex">
-					<div class="d-flex flex-row py-5 h-100 align-items-center">
-						<div class="ab ml-3"></div>
-					</div>
-					<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1">
-						<div class="curso-text2__wrap text-wrap pt-5">
-							<h2 class="title-4 color-blue-1">¿Es este Crash Course para tí?</h2>
-							<p class="color-blue-4 subtitle mb-5">Sí en caso de encajar con uno de estos tres perfiles:</p>
-							<div class="color-blue-5">
-								<ul class="list-arrow">
-									<li class="mb-5">
-										Tienes una visión crítica y deseas visualizar con mayor detalle la capacidad de
-																																							alcance
-																																							que
-																																							tiene la tecnología en el
-																																							diseño del comportamiento y la toma de decisiones.
-									</li>
-									<li class="mb-5">
-										Te interesa la parte más tangible: conocer cómo nos comportamos las personas y cómo
-																																							la
-																																							tecnología utiliza la ciencia del
-																																							comportamiento para empujar las decisiones de las personas a través de heurísticos,
-																																							sesgos y
-																																							nudges.
-									</li>
-									<li class="mb-5">
-										O porque sí, o porque te molamos, o por lo que sea. Bienvenido igualmente.
-									</li>
-								</ul>
-
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</div>
 
-		</div>
-		<!-- Fin intro -->
-		<!-- Programa -->
-		<div class="section bg-blue-1 ml-8 h-100v" data-scroll-section>
 
-			<div class="ly-curso-programa h-100 d-flex flex-column justify-content-center align-items-center dev ">
-				<div class="d-flex flex-row justify-content-start align-items-start">
-					<div>
-						<h2 class="color-white title-4">Programa del crash<br>
-							course online</h2>
-					</div>
-
-				</div>
-				<div class="d-flex">
-
-
-					<div class="">
-						<div>
-							<div class="d-flex title-decoration">
-								<div class="d-flex flex-row align-items-center pt-2">
-									<div class="text-base color-blue-4 my-4">
-										<span>01</span>
-									</div>
-									<div class="ab ml-3"></div>
-								</div>
-								<div class="">
-									<h3 class="title-2 color-white pl-4 mb-4">Entendiendo el comportamiento</h3>
-								</div>
-							</div>
-							<div class="pl-5 pt-3">
-								<p class="color-white pl-2">Cómo todamos decisiones</p>
-								<ul class="color-blue-5 ml-1 pl-4">
-									<li class="mb-2">Limitaciones de procesamiento</li>
-									<li class="mb-2">Entorno social, contexto social e individualidad</li>
-									<li class="mb-2">Racionalidad limitada, heurísticos y sesgos</li>
-								</ul>
-							</div>
-						</div>
-						<div>
-							<div class="d-flex title-decoration">
-								<div class="d-flex flex-row align-items-center pt-2">
-									<div class="text-base color-blue-4 my-4">
-										<span>02</span>
-									</div>
-									<div class="ab ml-3"></div>
-								</div>
-								<div class="">
-									<h3 class="title-2 color-white pl-4 mb-4">Arquitectura de decisiones</h3>
-								</div>
-							</div>
-							<div class="pl-5 pt-3">
-
-								<ul class="color-blue-5 ml-1 pl-4">
-									<li class="mb-2">La relatividad de las decisiones (decoy, anclaje y ajuste, sunk cost…)
-									</li>
-									<li class="mb-2">La saliencia de las opciones (framing, escasez, primacy effect…)</li>
-									<li class="mb-2">El ahorro cognitivo y la eliminación de fricciones (default,
-																																							procrastinación…)</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="">
-						<div class="mb-5">
-							<div class="d-flex title-decoration">
-								<div class="d-flex flex-row align-items-center pt-2">
-									<div class="text-base color-blue-4 my-4">
-										<span>03</span>
-									</div>
-									<div class="ab ml-3"></div>
-								</div>
-								<div class="">
-									<h3 class="title-2 color-white pl-4 mb-4">Cómo altera la tecnología nuestras decisiones?
-									</h3>
-								</div>
-							</div>
-						</div>
-						<div class="mb-5">
-							<div class="d-flex title-decoration">
-								<div class="d-flex flex-row align-items-center pt-2">
-									<div class="text-base color-blue-4 my-4">
-										<span>04</span>
-									</div>
-									<div class="ab ml-3"></div>
-								</div>
-								<div class="">
-									<h3 class="title-2 color-white pl-4 mb-4">Intervenciones desde Bikolabs</h3>
-								</div>
-
-							</div>
-						</div>
-						<div class="mb-5">
-							<div class="d-flex title-decoration">
-								<div class="d-flex flex-row align-items-center pt-2">
-									<div class="text-base color-blue-4 my-4">
-										<span>05</span>
-									</div>
-									<div class="ab ml-3"></div>
-								</div>
-								<div class="">
-									<h3 class="title-2 color-white pl-4 mb-4">La libertad de elección</h3>
-								</div>
-								<div class="pl-5 pt-3">
-									<p class="color-white pl-2">Paternalismo libertario, sludges, dark patterns y boost</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
+			<div class="ly-seccion-curso-2 h100v d-flex justify-content-center align-items-center">
+				<div>
+					<img src="/assets/images/sky.png" alt="Imagen">
 				</div>
 			</div>
 
-		</div>
-		<!-- fin programa -->
-		<!-- Form section -->
-		<div class="section bg-white pl-7" data-scroll-section>
-			<div class="d-flex h-100v">
-
-				<div class="ly-investigacion--1">
-					<div class="d-flex flex-row py-5 h-100 align-items-center">
-						<div class="text-sm color-blue-4 my-4">
-							<span>01</span>
-						</div>
-						<div class="ab ml-3"></div>
-					</div>
+			<div class="ly-seccion-curso-3 h100v d-flex flex-column justify-content-end align-items-center">
+				<div class="seccion-curso__textright text-wrap text-xl color-blue-1 mb-8 pb-3">
+					<p>En los últimos años la ciencia del comportamiento ha aterrizado en los productos tecnológicos
+						para empujar a través de
+						“nudges digitales” nuestras acciones y (des)habilitar nuestra capacidad de toma de decisiones.
+					</p>
+					<p>Compartimos en este curso intensivo nuestras experiencias de intervención, además de una base
+						profunda sobre los
+						mecanismos psicológicos que sustentan la ciencia del cambio comportamental, los “nudges
+						digitales” y cuál está siendo su
+						aplicación práctica en tecnología.</p>
 				</div>
-
-				<div class="ly-investigacion--2">
-					<div
-						class="d-flex h-100v form-wrap">
-
-						<!-- Form -->
-						{% include "@base/forms/contacto.twig" %}
-						<!-- Fin Form -->
-
-					</div>
+				<div class=" seccion-curso__textright text-wrap mb-6">
+					<p class="text-sm color-blue-6">Este curso intensivo es parte de la etapa Difusión de
+						nuestro proceso de trabajo. Su objetivo es compartir nuestros aprendizajes en la línea de
+						investigación “Toma de
+						decisiones”.</p>
 				</div>
 			</div>
-		</div>
-		<!-- Fin Form section -->
-		<!-- Form section -->
-		<div class="section bg-white pl-7" data-scroll-section>
-			<div class="d-flex h-100v">
+			<div class="ly-seccion-curso-4 h100v d-flex">
+				<div class="d-flex flex-row py-5 h-100 align-items-center">
+					<div class="ab ml-3"></div>
+				</div>
+				<div class="d-flex flex-column align-items-center justify-content-center flex-grow-1">
+					<div class="curso-text2__wrap text-wrap pt-5">
+						<h2 class="title-4 color-blue-1 mb-4">¿Es este Crash Course para tí?</h2>
+						<p class="color-blue-4 subtitle mb-5">Sí en caso de encajar con uno de estos tres perfiles:</p>
+						<div class="color-blue-5">
+							<ul class="list-arrow">
+								<li class="mb-5">
+									Tienes una visión crítica y deseas visualizar con mayor detalle la capacidad de
+									alcance
+									que
+									tiene la tecnología en el
+									diseño del comportamiento y la toma de decisiones.
+								</li>
+								<li class="mb-5">
+									Te interesa la parte más tangible: conocer cómo nos comportamos las personas y cómo
+									la
+									tecnología utiliza la ciencia del
+									comportamiento para empujar las decisiones de las personas a través de heurísticos,
+									sesgos y
+									nudges.
+								</li>
+								<li class="mb-5">
+									O porque sí, o porque te molamos, o por lo que sea. Bienvenido igualmente.
+								</li>
+							</ul>
 
-				<div class="ly-investigacion--1">
-					<div class="d-flex flex-row py-5 h-100 align-items-center">
-						<div class="text-sm color-blue-4 my-4">
-							<span>01</span>
 						</div>
-						<div class="ab ml-3"></div>
 					</div>
 				</div>
 
-				<div class="ly-investigacion--2">
-					<div
-						class="d-flex h-100v form-wrap">
-
-						<!-- Form -->
-						{% include "@base/forms/contribuir.twig" %}
-						<!-- Fin Form -->
-
-					</div>
-				</div>
 			</div>
 		</div>
-		<!-- Fin Form section -->
 
 	</div>
+	<!-- Fin intro -->
+	<!-- Programa -->
+	<div class="section bg-blue-1 ml-8 h-100v" data-scroll-section>
+
+		<div class="ly-curso-programa h-100 d-flex flex-column justify-content-center align-items-center dev">
+			<div class="d-flex flex-row justify-content-start align-items-start w-100">
+				<div class="mb-7 ml-7">
+					<h2 class="color-white title-4 mb-3 pt-5">Programa del crash<br>
+						course online</h2>
+				</div>
+			</div>
+			<div class="d-flex">
+				<div>
+					<div class="mb-7">
+						<div class="d-flex title-decoration">
+							<div class="d-flex flex-row align-items-center pt-2">
+								<div class="text-base color-blue-4 my-4">
+									<span>01</span>
+								</div>
+								<div class="ab ml-3"></div>
+							</div>
+							<div class="">
+								<h3 class="title-2 color-white pl-4 mb-4">Entendiendo el comportamiento</h3>
+							</div>
+						</div>
+						<div class="pl-5 pt-3">
+							<p class="color-white pl-2">Cómo todamos decisiones</p>
+							<ul class="color-blue-5 ml-1 pl-4">
+								<li class="mb-2">Limitaciones de procesamiento</li>
+								<li class="mb-2">Entorno social, contexto social e individualidad</li>
+								<li class="mb-2">Racionalidad limitada, heurísticos y sesgos</li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<div class="d-flex title-decoration">
+							<div class="d-flex flex-row align-items-center pt-2">
+								<div class="text-base color-blue-4 my-4">
+									<span>02</span>
+								</div>
+								<div class="ab ml-3"></div>
+							</div>
+							<div class="">
+								<h3 class="title-2 color-white pl-4 mb-4">Arquitectura de decisiones</h3>
+							</div>
+						</div>
+						<div class="pl-5 pt-3">
+
+							<ul class="color-blue-5 ml-1 pl-4">
+								<li class="mb-2">La relatividad de las decisiones (decoy, anclaje y ajuste, sunk cost…)
+								</li>
+								<li class="mb-2">La saliencia de las opciones (framing, escasez, primacy effect…)</li>
+								<li class="mb-2">El ahorro cognitivo y la eliminación de fricciones (default,
+									procrastinación…)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="pl-7">
+					<div class="mb-7">
+						<div class="d-flex title-decoration">
+							<div class="d-flex flex-row align-items-center pt-2">
+								<div class="text-base color-blue-4 my-4">
+									<span>03</span>
+								</div>
+								<div class="ab ml-3"></div>
+							</div>
+							<div class="">
+								<h3 class="title-2 color-white pl-4 mb-4">Cómo altera la tecnología<br> nuestras
+									decisiones?
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="mb-7">
+						<div class="d-flex title-decoration">
+							<div class="d-flex flex-row align-items-center pt-2">
+								<div class="text-base color-blue-4 my-4">
+									<span>04</span>
+								</div>
+								<div class="ab ml-3"></div>
+							</div>
+							<div class="">
+								<h3 class="title-2 color-white pl-4 mb-4">Intervenciones desde Bikolabs</h3>
+							</div>
+
+						</div>
+					</div>
+					<div class="mb-7">
+						<div class="d-flex flex-row title-decoration">
+							<div class="d-flex flex-row align-items-center pt-2">
+								<div class="text-base color-blue-4 my-4">
+									<span>05</span>
+								</div>
+								<div class="ab ml-3"></div>
+							</div>
+							<div>
+								<h3 class="title-2 color-white pl-4 mb-3">La libertad de elección</h3>
+								<div class="pl-3">
+									<p class="color-white pl-2">Paternalismo libertario, sludges, dark patterns y boost
+									</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<!-- fin programa -->
+	<!-- Form curso -->
+	<div id="reserva-plaza" class="section bg-white pl-7 ly-form-curso-wrap h-100v " data-scroll-section>
+
+		<div class="d-flex justify-content-center">
+
+			<div class="d-flex flex-column justify-content-start align-items-start h-100v pr-7">
+				<div>
+					<h2 class="title-4 pt-8 mb-6">Reservar plaza</h2>
+				</div>
+				<div>
+					<p class="title-2 mb-3 line-base">Intervenir en la tecnología que <br>diseña nuestro comportamiento
+					</p>
+					<p class="color-blue-1 text-xl">29-30 Junio 2021 <span class="color-blue-6"> de 15:00 a 18:30</span>
+					</p>
+					<div class="pt-5">
+						<p class="color-blue-6 mb-0">Tarifa Early</p>
+						<p class="color-blue-1 title-2"><span class="line-through">95€</span> 45€</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-center align-items-center h-100v">
+				<div>
+					<!-- Form -->
+					{% include "@base/forms/curso.twig" %}
+					<!-- Fin Form -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Form curso -->
+
+
+
+</div>
 {% endblock %}

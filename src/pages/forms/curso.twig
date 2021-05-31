@@ -1,40 +1,83 @@
-<form action="https://www.getdrip.com/forms/63606088/submissions" method="post" data-drip-embedded-form="63606088"
-    id="drip-ef-63606088" class="form-type-one">
-    <div data-drip-attribute="description"><strong>Reserva de plaza</strong><br>
-        <br>
-        <strong>Curso: </strong>Intervenir en la tecnología que diseña nuestro comportamiento<br>
-        <strong>Fechas: </strong>29-30 Junio 2021 de 15:00 a 18:30<br>
-        <strong>Precio: </strong>Tarifa Early (45€ 95€)
-    </div>
-    <div>
-        <label for="drip-first-name">Tu nombre completo</label><br>
-        <input type="text" id="drip-first-name" name="fields[first_name]" value="">
-    </div>
-    <div>
-        <label for="drip-email">Tu email</label><br>
-        <input type="email" id="drip-email" name="fields[email]" value="">
-    </div>
-    <div>
-        <label for="drip-empresa">Dónde trabajas</label><br>
-        <input type="text" id="drip-empresa" name="fields[empresa]" value="">
-    </div>
-    <div>
-        <label for="drip-comentarios">Si quieres comentarnos algo</label><br>
-        <input type="text" id="drip-comentarios" name="fields[comentarios]" value="">
-    </div>
-    <div>
-        <input type="hidden" name="fields[eu_consent]" id="drip-eu-consent-denied" value="denied">
-        <input type="checkbox" name="fields[eu_consent]" id="drip-eu-consent" value="granted">
-        <label for="drip-eu-consent"><a href="https://www.biko2.com/proteccion-de-datos/"
-                title="Enlace a protección de datos">He leído y acepto las condiciones y términos de uso</a></label>
-    </div>
-    <input type="hidden" name="fields[eu_consent_message]" value="">
-    <div style="display: none;" aria-hidden="true">
-        <label for="website">Website</label><br>
-        <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="">
-    </div>
-    <input type="hidden" name="tags[]" id="tags_" value="interesados-curso-bikolabs" tabindex="-1">
-    <div>
-        <input type="submit" value="Enviar" data-drip-attribute="sign-up-button">
-    </div>
-</form>
+<div class="ly-form-curso px-2 text-wrap">
+
+    <form action="https://www.getdrip.com/forms/63606088/submissions" method="post" data-drip-embedded-form="63606088"
+        id="drip-ef-63606088" class="form-type-one">
+
+        <div class="d-flex flex-row mb-5">
+            <div class="w-50 px-3">
+                <label class="sr-only" for="drip-first-name">Tu nombre completo</label>
+                <input type="text" id="drip-first-name" name="fields[first_name]" value=""
+                    placeholder="Tu nombre completo" required>
+            </div>
+            <div class="w-50 px-3">
+
+                <label class="sr-only" for="drip-apellidos">Apellidos</label>
+                <input type="text" id="drip-apellidos" name="fields[apellidos]" value="" placeholder="Apellidos"
+                    required>
+
+
+            </div>
+        </div>
+
+        <div class="d-flex flex-row mb-5">
+            <div class="w-50 px-3">
+                <label class="sr-only" for="drip-email">Tu email</label>
+                <input type="email" id="drip-email" name="fields[email]" value="" placeholder="Email" required>
+            </div>
+            <div class="w-50 px-3">
+                <label class="sr-only" for="drip-empresa">Dónde trabajas</label>
+                <input type="textarea" id="drip-empresa" name="fields[empresa]" value="" placeholder="¿Dónde trabajas?">
+            </div>
+        </div>
+
+        <div class="d-flex flex-row mb-3">
+            <div class="w-100 px-3">
+                <label class="sr-only" for="drip-comentarios">Si quieres comentarnos algo</label>
+                <textarea id="drip-comentarios" name="fields[comentarios]" cols="30" rows="10"
+                    placeholder="Si quieres comentarnos algo"></textarea>
+            </div>
+        </div>
+
+        <div class="px-3 mb-4 ml-3 form-check">
+            <input type="hidden" name="fields[eu_consent]" id="drip-eu-consent-denied" value="denied">
+            <input type="checkbox" name="fields[eu_consent]" id="drip-eu-consent" value="granted">
+            <label for="drip-eu-consent"><a class="color-blue-1 text-base text-capitalize decoration-none pl-2"
+                    href="https://www.biko2.com/proteccion-de-datos/" title="Enlace a protección de datos">He leído y
+                    acepto las condiciones y términos de uso</a></label>
+
+            <input type="hidden" name="fields[eu_consent_message]" value="">
+            <div style="display: none;" aria-hidden="true">
+                <label for="website">Website</label><br>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="">
+            </div>
+            <input type="hidden" name="tags[]" id="tags_" value="interesados-curso-bikolabs" tabindex="-1" required>
+        </div>
+
+
+
+        <div class="px-3 w-100 mb-4">
+            <input type="submit" value="Enviar" class="btn-secondary" data-drip-attribute="sign-up-button">
+        </div>
+
+        <div class="px-3 w-100 mb-5">
+            <p class="color-blue-6 text-sm">
+                <i>BIKO2 2006, S.L. como responsable del tratamiento de sus datos gestionará con su consentimiento, los
+                    procedimientos
+                    administrativos con el objetivo de responder a tu solicitud de información. Sus datos no se cederán
+                    a terceros salvo
+                    obligación legal o que la cesión sea necesaria para el cumplimiento de la finalidad. Usted puede
+                    ejercer los
+                    derechos de acceso, rectificación o supresión de sus datos. Puede consultar la información adicional
+                    y detallada
+                    sobre Protección de Datos desde <a class="color-blue-1"
+                        href="https://www.biko2.com/proteccion-de-datos/" target="_blank">este
+                        enlace</a>.</i>
+
+            </p>
+
+        </div>
+
+
+    </form>
+
+</div>

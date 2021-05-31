@@ -13,6 +13,14 @@ a.btn-primary {
     }
 }
 
+input.btn-secondary {
+    @include transition;
+
+    @extend a.btn-primary;
+
+    @extend a.btn-secondary;
+}
+
 a.btn-secondary {
     @extend .btn-primary;
 
