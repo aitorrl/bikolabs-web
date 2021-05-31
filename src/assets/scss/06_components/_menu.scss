@@ -26,3 +26,47 @@
         transform: none;
     }
 }
+
+.nav-primary {
+    width: 110px;
+    background-color: $color-blue-1;
+
+    span {
+        color: white;
+    }
+
+    img.logo {
+        width: auto;
+        height: 24px !important;
+    }
+
+    nav > a {
+        color: $white;
+
+        &:hover {
+            color: $color-pink-1;
+        }
+    }
+}
+
+.nav-clear {
+    width: 110px;
+    background-color: $color-white !important;
+
+    span {
+        color: white;
+    }
+
+    img.logo {
+        width: auto;
+        height: 24px !important;
+    }
+
+    nav > a {
+        color: $color-blue-1 !important;
+
+        &:hover {
+            color: $color-pink-1;
+        }
+    }
+}

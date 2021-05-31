@@ -3,7 +3,11 @@
 {% block page %}
 
 {# Menu #}
-{% include "@base/menu/menu.twig" %}
+{% include "@base/menu/menu.twig" with {
+'class': 'nav-primary',
+'logo': 'logobiko.svg',
+}
+%}
 
 <div class="bg-blue-1" data-scroll-container>
 

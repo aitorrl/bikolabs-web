@@ -4,7 +4,11 @@
 
 
 {# Menu #}
-{% include "@base/menu/menu.twig" %}
+{% include "@base/menu/menu.twig" with {
+'class': 'nav-clear',
+'logo': 'logobiko.svg',
+}
+%}
 
 <div class="bg-white" data-scroll-container>
 
@@ -35,9 +39,9 @@
 						</div>
 						<div class="flex-grow-1 pl-5">
 							<div class="pt-4 icon-mini pr-5">
-								<a href=""
-									class="decoration-none mb-3 btn-secondary d-flex justify-content-between aaaaa"
-									data-scroll="" data-scroll-class="#reserva-plaza">Reservar
+								<a href="#reserva-plaza"
+									class="decoration-none mb-3 btn-secondary d-flex justify-content-between"
+									data-scroll-to>Reservar
 									plaza
 									<div class="pl-3">
 										<svg>
@@ -119,7 +123,7 @@
 	<!-- Programa -->
 	<div class="section bg-blue-1 ml-8 h-100v" data-scroll-section>
 
-		<div class="ly-curso-programa h-100 d-flex flex-column justify-content-center align-items-center dev">
+		<div class="ly-curso-programa h-100 d-flex flex-column justify-content-center align-items-center">
 			<div class="d-flex flex-row justify-content-start align-items-start w-100">
 				<div class="mb-7 ml-7">
 					<h2 class="color-white title-4 mb-3 pt-5">Programa del crash<br>
@@ -235,7 +239,7 @@
 
 			<div class="d-flex flex-column justify-content-start align-items-start h-100v pr-7">
 				<div>
-					<h2 class="title-4 pt-8 mb-6">Reservar plaza</h2>
+					<h2 class="title-4 pt-6 mb-6">Reservar plaza</h2>
 				</div>
 				<div>
 					<p class="title-2 mb-3 line-base">Intervenir en la tecnología que <br>diseña nuestro comportamiento

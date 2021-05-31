@@ -3,14 +3,15 @@
 {% block page %}
 
 {# Menu #}
-{% include "@base/menu/menu.twig" %}
+{% include "@base/menu/menu.twig" with {
+'class': 'nav-primary',
+'logo': 'logobikowhite.svg',
+}
+%}
 
 <div class="bg-blue-1" data-scroll-container>
+  {# Intro #}
   <div class="section bg-blue-1 px-6" data-scroll-section>
-    <div class="title-bikolabs__pos">
-      <!-- <h2 class="title-2 font-secondary color-white text-uppercase ml-6 title-bikolabs__pos">Bikolabs</h2> -->
-    </div>
-
     <div class="d-flex flex-md-row">
       <div class="d-flex flex-column h-100v  justify-content-center align-items-center intro-wrap__left">
         <div>
@@ -34,10 +35,9 @@
     <div class="" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
       <img src="/assets/images/arrow.png" alt="Flecha de continuación">
     </div>
-
   </div>
-
-
+  {# Intro #}
+  
   <!-- Nuestro proceso  -->
   {% include "@base/bloque-nuestro-proceso/index.twig" %}
   <!-- Fin Nuestro proceso  -->
