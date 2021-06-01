@@ -4,7 +4,7 @@
     border-right: 1px solid #E5E5E5;
     text-align: center;
     padding: 20px 0px;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 1111111;
 
@@ -69,4 +69,13 @@
             color: $color-pink-1;
         }
     }
+}
+
+.border-top-blue {
+    border-top: 1px solid $color-blue-1;
+}
+
+.bbb {
+    width: 10px;
+    height: 10px;
 }

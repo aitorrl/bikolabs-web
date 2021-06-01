@@ -34,6 +34,7 @@
         href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Raleway:wght@200;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"
         integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -55,43 +56,16 @@
     <!-- endinject -->
 </body>
 
-{#
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-
-<script>
-    const swiper = new Swiper('.horizontal-scroll', {
-        // Optional parameters
-        direction: 'horizontal',
-        mousewheel: true,
-        loop: false,
-        freeMode: true,
-
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    });
-
-</script> #}
-
-
 {# Gsap #}
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
 
 
-<!-- <script>
-    let tween = gsap.to(".lab", {
-        width: 300,
-        duration: 1.5,
-    });
-</script> -->
 
 
 
+{#
 <script>
     gsap.registerPlugin(ScrollTrigger);
 
@@ -108,8 +82,7 @@
     });
 
 
-
-</script>
+</script> #}
 <!-- Timeline -->
 <!-- <script>
     const tl = new TimelineMax();
