@@ -89,6 +89,14 @@
     height: 100vh;
 }
 
+.w-100w {
+    width: 100vw;
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+    }
+}
+
 .dev-w {
     min-width: 400px;
 }

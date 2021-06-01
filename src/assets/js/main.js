@@ -204,3 +204,16 @@
   new p5(sketch, "invest");
   new p5(sketch, "invest2");
 })();
+
+
+
+// Formulario
+jQuery(document).ready(function(){  
+    jQuery("#6617").click(function() {  
+        if($("#6617").is(':checked')) {    
+            $("#textarea6667").removeClass("d-none"); 
+        } else {  
+             $("#textarea6667").addClass("d-none");  
+        }  
+    });    
+});  

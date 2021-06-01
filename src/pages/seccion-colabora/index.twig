@@ -1,0 +1,50 @@
+{# ----- HOME ----- #}
+{% extends "layouts::/page.twig" %}
+{% block page %}
+
+
+{# Menu #}
+{% include "@base/menu/menu.twig" with {
+'class': 'nav-clear',
+'logo': 'logobiko.svg',
+}
+%}
+
+<div class="bg-white" XXdata-scroll-container>
+
+
+	<!-- Form curso -->
+	<div class="dev section bg-white pl-7 ly-form-colabora-wrap w-100w h-100v " XXdata-scroll-section>
+
+		<div class="d-flex justify-content-center">
+
+			<div class="d-flex flex-column justify-content-start align-items-start h-100v pr-7 text-wrap">
+				<div>
+					<h2 class="title-4 pt-6 mb-6">Cómo contribuir <br> con el estudio</h2>
+				</div>
+				<div>
+					<p class="subtitle mb-3 line-base mb-5">Estamos imaginando nuevas formas de<br> financiarnos. Y nos
+						gustaría saber tu opinión<br> sobre el modelo con el que te
+						sentirías más<br> cómodo para contribuir con Bikolabs.
+					</p>
+					<p class="color-blue-1 mb-5 title-1">Cuéntanos qué modelo te podría encajar <br>para
+						contribuir:</p>
+
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-center align-items-center h-100v">
+				<div class="pt-0 pt-md-6">
+					<!-- Form -->
+					{% include "@base/forms/contribuir.twig" %}
+					<!-- Fin Form -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Form curso -->
+
+
+
+</div>
+{% endblock %}
