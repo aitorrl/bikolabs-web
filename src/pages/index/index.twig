@@ -2,19 +2,13 @@
 {% extends "layouts::/page.twig" %}
 {% block page %}
 
-
-
 <div class="bg-blue-1" data-scroll-container>
-
   {# Menu #}
-
   {% include "@base/menu/menu.twig" with {
   'class': 'nav-primary',
   'logo': 'logobikowhite.svg',
   }
   %}
-
-
   {# Intro #}
   <div class="section bg-blue-1 px-6" data-scroll-section>
     <div class="d-flex flex-md-row">
@@ -28,26 +22,16 @@
             Investigamos y modelamos<br>
             la interacción presente y futura<br>
             entre personas y tecnología.<br></h1>
-
         </div>
-
-
       </div>
       <div class="intro-wrap__right" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4"
         style="margin-left:-7vw">
         <div id="canvas" class="fluid"></div>
-        <div class="pt-5" data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
-          <img src="/assets/images/arrow.png" alt="Flecha de continuación">
-        </div>
       </div>
-
-
     </div>
-
-
-    <div id="fixed-target"></div>
-
-
+    {# <div class="pt-5" data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
+      <img src="/assets/images/arrow.png" alt="Flecha de continuación">
+    </div> #}
   </div>
   {# Intro #}
 
