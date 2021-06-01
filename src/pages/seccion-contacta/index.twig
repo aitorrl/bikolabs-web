@@ -1,0 +1,55 @@
+{# ----- HOME ----- #}
+{% extends "layouts::/page.twig" %}
+{% block page %}
+
+
+{# Menu #}
+{% include "@base/menu/menu.twig" with {
+'class': 'nav-clear',
+'logo': 'logobiko.svg',
+}
+%}
+
+<div class="bg-white">
+
+
+	<!-- Form contactar-->
+	<div class="section bg-white pl-7 ly-form-colabora-wrap w-100w h-100v">
+
+		<div class="d-flex justify-content-center">
+
+			<div
+				class="ly-form-contactar-text d-flex flex-column justify-content-start align-items-start h-100v mr-7 text-wrap">
+				<div>
+					<h2 class="title-4 pt-6 mb-6">Si los encuentra,<br> quizá pueda<br> contratarlos</h2>
+				</div>
+				<div>
+					<p class="subtitle mb-3 line-base mb-5">Hasta la fecha, la mayoría de los proyectos de intervención
+						de Bikolabs han sido propios. Con nuestra presentación
+						oficial en sociedad, nos encontramos en disposición de aceptar peticiones de quienes deseen
+						recurrir al estudio.
+					</p>
+					<p class="color-blue-1 subtitle mb-5">
+						Por eso hacemos nuestro el lema del Equipo A.<br> <strong>“Si tiene usted un problema y se los
+							encuentra, quizá pueda contratarlos”</strong>:
+					</p>
+
+
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-center align-items-center h-100v">
+				<div class="pt-0 pt-md-6">
+					<!-- Form -->
+					{% include "@base/forms/contacto.twig" %}
+					<!-- Fin Form -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Form contribuir -->
+
+
+
+</div>
+{% endblock %}
