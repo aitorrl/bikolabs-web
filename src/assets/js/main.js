@@ -207,13 +207,13 @@
 
 
 
-// Formulario
-jQuery(document).ready(function(){  
-    jQuery("#6617").click(function() {  
+// Formulario colobora
+jQuery(function(){
+    jQuery("#6617").on( "click", function() {  
         if($("#6617").is(':checked')) {    
             $("#textarea6667").removeClass("d-none"); 
         } else {  
              $("#textarea6667").addClass("d-none");  
         }  
-    });    
-});  
+    });  
+});
