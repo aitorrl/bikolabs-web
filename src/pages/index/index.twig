@@ -1,58 +1,60 @@
 {# ----- HOME ----- #}
 {% extends "layouts::/page.twig" %}
 {% block page %}
+<div class="ly-init d-flex align-items-center justify-content-center">
+  <div class="bg-blue-1 ly-init h-100" data-scroll-container>
+    {# Menu #}
+    {% include "@base/menu/menu.twig" with {
+    'class': 'nav-primary',
+    'logo': 'logobikowhite.svg',
+    }
+    %}
+    {# Intro #}
+    <div class="section bg-blue-1 px-6" data-scroll-section>
+      <div class="d-flex flex-md-row">
+        <div class="d-flex flex-column h-100v  justify-content-center align-items-center intro-wrap__left">
+          <div>
+            <h2 class="title-2 font-secondary text-uppercase  Xtitle-bikolabs__pos mb-4 color-pink-1">Bikolabs,
+              el estudio ( de intervención )
 
-<div class="bg-blue-1" data-scroll-container>
-  {# Menu #}
-  {% include "@base/menu/menu.twig" with {
-  'class': 'nav-primary',
-  'logo': 'logobikowhite.svg',
-  }
-  %}
-  {# Intro #}
-  <div class="section bg-blue-1 px-6" data-scroll-section>
-    <div class="d-flex flex-md-row">
-      <div class="d-flex flex-column h-100v  justify-content-center align-items-center intro-wrap__left">
-        <div>
-          <h2 class="title-2 font-secondary text-uppercase  Xtitle-bikolabs__pos mb-4 color-pink-1">Bikolabs,
-            el estudio ( de intervención )
-
-            de Biko</h2>
-          <h1 class="title-4 color-white line-3xl ml-6 mt-4">
-            Investigamos y modelamos<br>
-            la interacción presente y futura<br>
-            entre personas y tecnología.<br></h1>
+              de Biko</h2>
+            <h1 class="title-4 color-white line-3xl ml-6 mt-4">
+              Investigamos y modelamos<br>
+              la interacción presente y futura<br>
+              entre personas y tecnología.<br></h1>
+          </div>
+        </div>
+        <div class="intro-wrap__right" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4"
+          style="margin-left:-7vw">
+          <div id="canvas" class="fluid pt-8"></div>
         </div>
       </div>
-      <div class="intro-wrap__right" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4"
-        style="margin-left:-7vw">
-        <div id="canvas" class="fluid pt-8"></div>
-      </div>
+      {# <div class="pt-5" data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
+        <img src="/assets/images/arrow.png" alt="Flecha de continuación">
+      </div> #}
     </div>
-    {# <div class="pt-5" data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
-      <img src="/assets/images/arrow.png" alt="Flecha de continuación">
-    </div> #}
+    {# Intro #}
+
+    <!-- Nuestro proceso  -->
+    {% include "@base/bloque-nuestro-proceso/index.twig" %}
+    <!-- Fin Nuestro proceso  -->
+
+    <!-- Linea de investigacion  -->
+    {% include "@base/bloque-lineas-de-investigacion/index.twig" %}
+    <!-- Fin Linea de investigacion  -->
+
+    <!-- Curso  -->
+    {% include "@base/bloque-curso/index.twig" %}
+    <!-- Fin Curso  -->
+
+    <!--  El estudio  -->
+    {% include "@base/bloque-el-estudio/index.twig" %}
+    <!-- Fin El estudio  -->
+
+    <!-- Equipo A  -->
+    {% include "@base/bloque-equipo-a/index.twig" %}
+    <!-- Fin Equipo A  -->
   </div>
-  {# Intro #}
+</div>
 
-  <!-- Nuestro proceso  -->
-  {% include "@base/bloque-nuestro-proceso/index.twig" %}
-  <!-- Fin Nuestro proceso  -->
-
-  <!-- Linea de investigacion  -->
-  {% include "@base/bloque-lineas-de-investigacion/index.twig" %}
-  <!-- Fin Linea de investigacion  -->
-
-  <!-- Curso  -->
-  {% include "@base/bloque-curso/index.twig" %}
-  <!-- Fin Curso  -->
-
-  <!--  El estudio  -->
-  {% include "@base/bloque-el-estudio/index.twig" %}
-  <!-- Fin El estudio  -->
-
-  <!-- Equipo A  -->
-  {% include "@base/bloque-equipo-a/index.twig" %}
-  <!-- Fin Equipo A  -->
-
-  {% endblock %}
+{% endblock %}

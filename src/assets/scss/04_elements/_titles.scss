@@ -38,21 +38,26 @@ $size-6xl: rem(90px);
 .title-6 {
     @extend .font-700;
 
-    // @extend .text-6xl;
+    font-size: $size-6xl;
 
     @extend .line-5xl;
 
-    @include responsive-font-size($size-6xl);
+    @include media-breakpoint-down(lg) {
+        font-size: $size-5xl;
+    }
 }
 
 .title-3 {
     @extend .font-700;
 
-    // @extend .text-3xl;
-
     @extend .line-4xl;
 
-    @include responsive-font-size($size-3xl);
+    @include media-breakpoint-down(lg) {
+        font-size: $size-3xl;
+    }
+
+
+    font-size: $size-3xl;
 }
 
 .title-2 {
